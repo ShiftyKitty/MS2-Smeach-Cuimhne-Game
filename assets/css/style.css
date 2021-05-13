@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Righteous', cursive;
+    font-size: 400%;
+    text-transform: uppercase;
+    color: white;
+}
+
+header {
+    background-color: #2da7d9;
+    min-height: 15%;
+    width: 100%;
+}
+
+nav ul li a {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 300;
+    border: solid 1px white;
+}
+
+.nav-game-button {
+    margin: 0 auto;
+    border: 1px solid white;
+    font-family: 'Righteous', cursive;
+    font-size: 200%;
+}
+
+.main-body {
+    width: 100%;
+    min-height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-body h3 {
+    color: black;
+    margin: 0 auto;
+}
+
+.game-board {
+    width: 80%;
+    min-height: 500px;
+    background-color: silver;
+}
+
+.outer-ring {
+    min-height: 45rem;
+    width: 45rem;
+    background-color: teal;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.middle-ring {
+    min-height: 30rem;
+    width: 30rem;
+    background-color: pink;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.inner-ring {
+    min-height: 10rem;
+    width: 10rem;
+    background-color: yellow;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.timer { 
+    min-height: 5rem;
+    width: 5rem;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #2da7d9;
+    min-height: 15vh;
+    bottom: 0;
+    right: 0;
+}
