@@ -50,7 +50,7 @@ nav ul li a {
 
 .main-body {
     width: 100%;
-    min-height: 80vh;
+    min-height: 75vh;
     margin: 0 auto;
     text-align: center;
 }
@@ -61,11 +61,12 @@ nav ul li a {
 }
 
 .game-board {
-    width: 80%;
-    min-height: 50rem;
+    min-height: 30rem;
     background-color: silver;
+    margin: 0 auto;
 }
 
+/*
 .outer-ring {
     min-height: 31.25rem;
     width: 31.25rem;
@@ -118,9 +119,8 @@ nav ul li a {
     background-color: black;
     z-index: 100;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 46.5%;
+    left: 48%;
 }
 
 .middle-tile {
@@ -130,11 +130,8 @@ nav ul li a {
     background-color: black;
     z-index: 100;
     position: absolute;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 46%;
+    left: 48%;
 }
 
 .inner-tile {
@@ -144,190 +141,638 @@ nav ul li a {
     background-color: black;
     z-index: 100;
     position: absolute;
-    top: 50%;
+    top: 46.5%;
+    left: 48%;
 }
 
 .outer-ring .outer-tile:nth-child(1) {
-    transform: rotate(0deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(0deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(2) {
-    transform: rotate(24deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(24deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(3) {
-    transform: rotate(48deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(48deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(4) {
-    transform: rotate(72deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(72deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(5) {
-    transform: rotate(96deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(96deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(6) {
-    transform: rotate(120deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(120deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(7) {
-    transform: rotate(144deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(144deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(8) {
-    transform: rotate(168deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(168deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(9) {
-    transform: rotate(192deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(192deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(10) {
-    transform: rotate(216deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(216deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(11) {
-    transform: rotate(240deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(240deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(12) {
-    transform: rotate(264deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(264deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(13) {
-    transform: rotate(288deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(288deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(14) {
-    transform: rotate(312deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(312deg) translate(21rem);
 }
 
 .outer-ring .outer-tile:nth-child(15) {
-    transform: rotate(336deg) translate(22.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(336deg) translate(21rem);
 }
 
 
 .middle-ring .middle-tile:nth-child(1) {
-    transform: rotate(0deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(0deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(2) {
-    transform: rotate(36deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(36deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(3) {
-    transform: rotate(72deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(72deg) translate(14rem);
 }
+
 .middle-ring .middle-tile:nth-child(4) {
-    transform: rotate(108deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(108deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(5) {
-    transform: rotate(144deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(144deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(6) {
-    transform: rotate(180deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(180deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(7) {
-    transform: rotate(216deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(216deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(8) {
-    transform: rotate(252deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(252deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(9) {
-    transform: rotate(288deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(288deg) translate(14rem);
 }
 
 .middle-ring .middle-tile:nth-child(10) {
-    transform: rotate(324deg) translate(15rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(324deg) translate(14rem);
 }
 
 
 .inner-ring .inner-tile:nth-child(1) {
-    transform: rotate(0deg) translate(7.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(0deg) translate(7rem);
 }
 
 .inner-ring .inner-tile:nth-child(2) {
-    transform: rotate(72deg) translate(7.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(72deg) translate(7rem);
 }
 
 .inner-ring .inner-tile:nth-child(3) {
-    transform: rotate(144deg) translate(7.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(144deg) translate(7rem);
 }
 
 .inner-ring .inner-tile:nth-child(4) {
-    transform: rotate(216deg) translate(7.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(216deg) translate(7rem);
 }
 
 .inner-ring .inner-tile:nth-child(5) {
-    transform: rotate(288deg) translate(7.5rem);
-    left: 50%;
-    right: 50%;
+    transform: rotate(288deg) translate(7rem);
 }
 
+@media (max-width: 480px) {
+    .timer { 
+        min-height: 70px;
+        width: 70px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .outer-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .middle-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .inner-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .outer-ring .outer-tile:nth-child(1) {
+        transform: rotate(0deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(2) {
+        transform: rotate(24deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(3) {
+        transform: rotate(48deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(4) {
+        transform: rotate(72deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(5) {
+        transform: rotate(96deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(6) {
+        transform: rotate(120deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(7) {
+        transform: rotate(144deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(8) {
+        transform: rotate(168deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(9) {
+        transform: rotate(192deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(10) {
+        transform: rotate(216deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(11) {
+        transform: rotate(240deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(12) {
+        transform: rotate(264deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(13) {
+        transform: rotate(288deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(14) {
+        transform: rotate(312deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(15) {
+        transform: rotate(336deg) translate(150px);
+    }
+    
+    
+    .middle-ring .middle-tile:nth-child(1) {
+        transform: rotate(0deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(2) {
+        transform: rotate(36deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(3) {
+        transform: rotate(72deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(4) {
+        transform: rotate(108deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(5) {
+        transform: rotate(144deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(6) {
+        transform: rotate(180deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(7) {
+        transform: rotate(216deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(8) {
+        transform: rotate(252deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(9) {
+        transform: rotate(288deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(10) {
+        transform: rotate(324deg) translate(100px);
+    }
+    
+    
+    .inner-ring .inner-tile:nth-child(1) {
+        transform: rotate(0deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(2) {
+        transform: rotate(72deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(3) {
+        transform: rotate(144deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(4) {
+        transform: rotate(216deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(5) {
+        transform: rotate(288deg) translate(50px);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .timer { 
+        min-height: 70px;
+        width: 70px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .outer-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .middle-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .inner-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .outer-ring .outer-tile:nth-child(1) {
+        transform: rotate(0deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(2) {
+        transform: rotate(24deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(3) {
+        transform: rotate(48deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(4) {
+        transform: rotate(72deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(5) {
+        transform: rotate(96deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(6) {
+        transform: rotate(120deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(7) {
+        transform: rotate(144deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(8) {
+        transform: rotate(168deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(9) {
+        transform: rotate(192deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(10) {
+        transform: rotate(216deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(11) {
+        transform: rotate(240deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(12) {
+        transform: rotate(264deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(13) {
+        transform: rotate(288deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(14) {
+        transform: rotate(312deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(15) {
+        transform: rotate(336deg) translate(150px);
+    }
+    
+    
+    .middle-ring .middle-tile:nth-child(1) {
+        transform: rotate(0deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(2) {
+        transform: rotate(36deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(3) {
+        transform: rotate(72deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(4) {
+        transform: rotate(108deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(5) {
+        transform: rotate(144deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(6) {
+        transform: rotate(180deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(7) {
+        transform: rotate(216deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(8) {
+        transform: rotate(252deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(9) {
+        transform: rotate(288deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(10) {
+        transform: rotate(324deg) translate(100px);
+    }
+    
+    
+    .inner-ring .inner-tile:nth-child(1) {
+        transform: rotate(0deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(2) {
+        transform: rotate(72deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(3) {
+        transform: rotate(144deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(4) {
+        transform: rotate(216deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(5) {
+        transform: rotate(288deg) translate(50px);
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .timer { 
+        min-height: 70px;
+        width: 70px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .outer-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .middle-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .inner-tile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+    
+    .outer-ring .outer-tile:nth-child(1) {
+        transform: rotate(0deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(2) {
+        transform: rotate(24deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(3) {
+        transform: rotate(48deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(4) {
+        transform: rotate(72deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(5) {
+        transform: rotate(96deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(6) {
+        transform: rotate(120deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(7) {
+        transform: rotate(144deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(8) {
+        transform: rotate(168deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(9) {
+        transform: rotate(192deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(10) {
+        transform: rotate(216deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(11) {
+        transform: rotate(240deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(12) {
+        transform: rotate(264deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(13) {
+        transform: rotate(288deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(14) {
+        transform: rotate(312deg) translate(150px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(15) {
+        transform: rotate(336deg) translate(150px);
+    }
+    
+    
+    .middle-ring .middle-tile:nth-child(1) {
+        transform: rotate(0deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(2) {
+        transform: rotate(36deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(3) {
+        transform: rotate(72deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(4) {
+        transform: rotate(108deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(5) {
+        transform: rotate(144deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(6) {
+        transform: rotate(180deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(7) {
+        transform: rotate(216deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(8) {
+        transform: rotate(252deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(9) {
+        transform: rotate(288deg) translate(100px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(10) {
+        transform: rotate(324deg) translate(100px);
+    }
+    
+    
+    .inner-ring .inner-tile:nth-child(1) {
+        transform: rotate(0deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(2) {
+        transform: rotate(72deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(3) {
+        transform: rotate(144deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(4) {
+        transform: rotate(216deg) translate(50px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(5) {
+        transform: rotate(288deg) translate(50px);
+    }
+
+}
 
 footer {
     background-color: #2da7d9;
