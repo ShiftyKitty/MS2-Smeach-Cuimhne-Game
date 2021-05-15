@@ -14,6 +14,7 @@ body {
     width: 100%;
     min-height: 100%;
     position: absolute;
+    padding: 0;
 }
 
 h1,
@@ -53,6 +54,7 @@ nav ul li a {
     min-height: 75vh;
     margin: 0 auto;
     text-align: center;
+    padding: 0;
 }
 
 .main-body h3 {
@@ -64,6 +66,7 @@ nav ul li a {
     min-height: 30rem;
     background-color: silver;
     margin: 0 auto;
+    padding: 0;
 }
 
 /*
@@ -269,177 +272,182 @@ nav ul li a {
 
 @media (max-width: 480px) {
     .timer { 
-        min-height: 70px;
-        width: 70px;
+        min-height: 60px;
+        width: 60px;
         background-color: white;
         border-radius: 50%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding: 0;
     }
     
     .outer-tile {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background-color: black;
         z-index: 100;
         position: absolute;
         top: 48%;
-        left: 45%;
+        left: 46%;
+        padding: 0;
     }
     
     .middle-tile {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background-color: black;
         z-index: 100;
         position: absolute;
         top: 48%;
-        left: 45%;
+        left: 46%;
+        padding: 0;
     }
     
     .inner-tile {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background-color: black;
         z-index: 100;
         position: absolute;
         top: 48%;
-        left: 45%;
+        left: 46%;
+        padding: 0;
     }
     
     .outer-ring .outer-tile:nth-child(1) {
-        transform: rotate(0deg) translate(150px);
+        transform: rotate(0deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(2) {
-        transform: rotate(24deg) translate(150px);
+        transform: rotate(24deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(3) {
-        transform: rotate(48deg) translate(150px);
+        transform: rotate(48deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(4) {
-        transform: rotate(72deg) translate(150px);
+        transform: rotate(72deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(5) {
-        transform: rotate(96deg) translate(150px);
+        transform: rotate(96deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(6) {
-        transform: rotate(120deg) translate(150px);
+        transform: rotate(120deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(7) {
-        transform: rotate(144deg) translate(150px);
+        transform: rotate(144deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(8) {
-        transform: rotate(168deg) translate(150px);
+        transform: rotate(168deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(9) {
-        transform: rotate(192deg) translate(150px);
+        transform: rotate(192deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(10) {
-        transform: rotate(216deg) translate(150px);
+        transform: rotate(216deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(11) {
-        transform: rotate(240deg) translate(150px);
+        transform: rotate(240deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(12) {
-        transform: rotate(264deg) translate(150px);
+        transform: rotate(264deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(13) {
-        transform: rotate(288deg) translate(150px);
+        transform: rotate(288deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(14) {
-        transform: rotate(312deg) translate(150px);
+        transform: rotate(312deg) translate(141px);
     }
     
     .outer-ring .outer-tile:nth-child(15) {
-        transform: rotate(336deg) translate(150px);
+        transform: rotate(336deg) translate(141px);
     }
     
     
     .middle-ring .middle-tile:nth-child(1) {
-        transform: rotate(0deg) translate(100px);
+        transform: rotate(0deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(2) {
-        transform: rotate(36deg) translate(100px);
+        transform: rotate(36deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(3) {
-        transform: rotate(72deg) translate(100px);
+        transform: rotate(72deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(4) {
-        transform: rotate(108deg) translate(100px);
+        transform: rotate(108deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(5) {
-        transform: rotate(144deg) translate(100px);
+        transform: rotate(144deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(6) {
-        transform: rotate(180deg) translate(100px);
+        transform: rotate(180deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(7) {
-        transform: rotate(216deg) translate(100px);
+        transform: rotate(216deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(8) {
-        transform: rotate(252deg) translate(100px);
+        transform: rotate(252deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(9) {
-        transform: rotate(288deg) translate(100px);
+        transform: rotate(288deg) translate(94px);
     }
     
     .middle-ring .middle-tile:nth-child(10) {
-        transform: rotate(324deg) translate(100px);
+        transform: rotate(324deg) translate(94px);
     }
     
     
     .inner-ring .inner-tile:nth-child(1) {
-        transform: rotate(0deg) translate(50px);
+        transform: rotate(0deg) translate(47px);
     }
     
     .inner-ring .inner-tile:nth-child(2) {
-        transform: rotate(72deg) translate(50px);
+        transform: rotate(72deg) translate(47px);
     }
     
     .inner-ring .inner-tile:nth-child(3) {
-        transform: rotate(144deg) translate(50px);
+        transform: rotate(144deg) translate(47px);
     }
     
     .inner-ring .inner-tile:nth-child(4) {
-        transform: rotate(216deg) translate(50px);
+        transform: rotate(216deg) translate(47px);
     }
     
     .inner-ring .inner-tile:nth-child(5) {
-        transform: rotate(288deg) translate(50px);
+        transform: rotate(288deg) translate(47px);
     }
 
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
     .timer { 
-        min-height: 70px;
-        width: 70px;
+        min-height: 140px;
+        width: 140px;
         background-color: white;
         border-radius: 50%;
         position: absolute;
@@ -449,162 +457,163 @@ nav ul li a {
     }
     
     .outer-tile {
-        width: 35px;
-        height: 35px;
+        height: 70px;
+        width: 70px;
         border-radius: 50%;
         background-color: black;
         z-index: 100;
         position: absolute;
-        top: 48%;
+        top: 46%;
         left: 45%;
     }
     
     .middle-tile {
-        width: 35px;
-        height: 35px;
+        height: 70px;
+        width: 70px;
         border-radius: 50%;
         background-color: black;
         z-index: 100;
         position: absolute;
-        top: 48%;
+        top: 46%;
         left: 45%;
     }
     
     .inner-tile {
-        width: 35px;
-        height: 35px;
+        height: 70px;
+        width: 70px;
         border-radius: 50%;
         background-color: black;
         z-index: 100;
         position: absolute;
-        top: 48%;
+        top: 46%;
         left: 45%;
     }
     
     .outer-ring .outer-tile:nth-child(1) {
-        transform: rotate(0deg) translate(150px);
+        transform: rotate(0deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(2) {
-        transform: rotate(24deg) translate(150px);
+        transform: rotate(24deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(3) {
-        transform: rotate(48deg) translate(150px);
+        transform: rotate(48deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(4) {
-        transform: rotate(72deg) translate(150px);
+        transform: rotate(72deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(5) {
-        transform: rotate(96deg) translate(150px);
+        transform: rotate(96deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(6) {
-        transform: rotate(120deg) translate(150px);
+        transform: rotate(120deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(7) {
-        transform: rotate(144deg) translate(150px);
+        transform: rotate(144deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(8) {
-        transform: rotate(168deg) translate(150px);
+        transform: rotate(168deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(9) {
-        transform: rotate(192deg) translate(150px);
+        transform: rotate(192deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(10) {
-        transform: rotate(216deg) translate(150px);
+        transform: rotate(216deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(11) {
-        transform: rotate(240deg) translate(150px);
+        transform: rotate(240deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(12) {
-        transform: rotate(264deg) translate(150px);
+        transform: rotate(264deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(13) {
-        transform: rotate(288deg) translate(150px);
+        transform: rotate(288deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(14) {
-        transform: rotate(312deg) translate(150px);
+        transform: rotate(312deg) translate(318px);
     }
     
     .outer-ring .outer-tile:nth-child(15) {
-        transform: rotate(336deg) translate(150px);
+        transform: rotate(336deg) translate(318px);
     }
     
     
     .middle-ring .middle-tile:nth-child(1) {
-        transform: rotate(0deg) translate(100px);
+        transform: rotate(0deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(2) {
-        transform: rotate(36deg) translate(100px);
+        transform: rotate(36deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(3) {
-        transform: rotate(72deg) translate(100px);
+        transform: rotate(72deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(4) {
-        transform: rotate(108deg) translate(100px);
+        transform: rotate(108deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(5) {
-        transform: rotate(144deg) translate(100px);
+        transform: rotate(144deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(6) {
-        transform: rotate(180deg) translate(100px);
+        transform: rotate(180deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(7) {
-        transform: rotate(216deg) translate(100px);
+        transform: rotate(216deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(8) {
-        transform: rotate(252deg) translate(100px);
+        transform: rotate(252deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(9) {
-        transform: rotate(288deg) translate(100px);
+        transform: rotate(288deg) translate(212px);
     }
     
     .middle-ring .middle-tile:nth-child(10) {
-        transform: rotate(324deg) translate(100px);
+        transform: rotate(324deg) translate(212px);
     }
     
     
     .inner-ring .inner-tile:nth-child(1) {
-        transform: rotate(0deg) translate(50px);
+        transform: rotate(0deg) translate(106px);
     }
     
     .inner-ring .inner-tile:nth-child(2) {
-        transform: rotate(72deg) translate(50px);
+        transform: rotate(72deg) translate(106px);
     }
     
     .inner-ring .inner-tile:nth-child(3) {
-        transform: rotate(144deg) translate(50px);
+        transform: rotate(144deg) translate(106px);
     }
     
     .inner-ring .inner-tile:nth-child(4) {
-        transform: rotate(216deg) translate(50px);
+        transform: rotate(216deg) translate(106px);
     }
     
     .inner-ring .inner-tile:nth-child(5) {
-        transform: rotate(288deg) translate(50px);
+        transform: rotate(288deg) translate(106px);
     }
 
 }
 
+/*
 @media (max-width: 1024px) {
     .timer { 
         min-height: 70px;
@@ -773,6 +782,7 @@ nav ul li a {
     }
 
 }
+*/
 
 footer {
     background-color: #2da7d9;
