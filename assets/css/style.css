@@ -26,7 +26,7 @@ h6 {
     font-family: 'Righteous', cursive;
     font-size: 400%;
     text-transform: uppercase;
-    color: white;
+    color: #F8E924;
 }
 
 header {
@@ -39,17 +39,18 @@ nav ul li a {
     font-family: 'Raleway', sans-serif;
     color: white;
     font-weight: 300;
-    border: solid 1px white;
+    border: solid 1px #F8E924;
 }
 
 .nav-game-button {
-    margin: 0 auto;
+    position: absolute;
+    left: 46%;
     border: 1px solid white;
     font-family: 'Righteous', cursive;
     font-size: 200%;
 }
 
-.main-body {
+.game-body {
     width: 100%;
     min-height: 75vh;
     margin: 0 auto;
@@ -57,14 +58,14 @@ nav ul li a {
     padding: 0;
 }
 
-.main-body h3 {
+.game-body h3 {
     color: black;
     margin: 0 auto;
 }
 
 .game-board {
-    min-height: 30rem;
-    background-color: silver;
+    min-height: 100vh;
+    background-color: #F8E924;
     margin: 0 auto;
     padding: 0;
 }
@@ -104,11 +105,14 @@ nav ul li a {
     transform: translate(-50%, -50%);
 }
 */
+
+/***********Generic Size Game*/
 .timer { 
     min-height: 9.375rem;
     width: 9.375rem;
     background-color: white;
     border-radius: 50%;
+    border: solid 1px black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,7 +123,8 @@ nav ul li a {
     width: 4.688rem;
     height: 4.688rem;
     border-radius: 50%;
-    background-color: black;
+    border: solid 1px black;
+    background-color: #ff68a8;
     z-index: 100;
     position: absolute;
     top: 46.5%;
@@ -130,7 +135,8 @@ nav ul li a {
     width: 4.688rem;
     height: 4.688rem;
     border-radius: 50%;
-    background-color: black;
+    border: solid 1px black;
+    background-color: #ff68a8;
     z-index: 100;
     position: absolute;
     top: 46%;
@@ -141,7 +147,8 @@ nav ul li a {
     width: 4.688rem;
     height: 4.688rem;
     border-radius: 50%;
-    background-color: black;
+    border: solid 1px black;
+    background-color: #ff68a8;
     z-index: 100;
     position: absolute;
     top: 46.5%;
@@ -270,6 +277,8 @@ nav ul li a {
     transform: rotate(288deg) translate(7rem);
 }
 
+/***********Mobile Size Game*/
+
 @media (max-width: 480px) {
     .timer { 
         min-height: 60px;
@@ -287,7 +296,7 @@ nav ul li a {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
         top: 48%;
@@ -299,7 +308,7 @@ nav ul li a {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
         top: 48%;
@@ -311,7 +320,7 @@ nav ul li a {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
         top: 48%;
@@ -443,6 +452,7 @@ nav ul li a {
 
 }
 
+/***********Tablet Size Game*/
 
 @media (min-width: 768px) {
     .timer { 
@@ -460,10 +470,10 @@ nav ul li a {
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
-        top: 46%;
+        top: 46.5%;
         left: 45%;
     }
     
@@ -471,10 +481,10 @@ nav ul li a {
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
-        top: 46%;
+        top: 46.5%;
         left: 45%;
     }
     
@@ -482,142 +492,143 @@ nav ul li a {
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
-        top: 46%;
+        top: 46.5%;
         left: 45%;
     }
     
     .outer-ring .outer-tile:nth-child(1) {
-        transform: rotate(0deg) translate(318px);
+        transform: rotate(0deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(2) {
-        transform: rotate(24deg) translate(318px);
+        transform: rotate(24deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(3) {
-        transform: rotate(48deg) translate(318px);
+        transform: rotate(48deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(4) {
-        transform: rotate(72deg) translate(318px);
+        transform: rotate(72deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(5) {
-        transform: rotate(96deg) translate(318px);
+        transform: rotate(96deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(6) {
-        transform: rotate(120deg) translate(318px);
+        transform: rotate(120deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(7) {
-        transform: rotate(144deg) translate(318px);
+        transform: rotate(144deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(8) {
-        transform: rotate(168deg) translate(318px);
+        transform: rotate(168deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(9) {
-        transform: rotate(192deg) translate(318px);
+        transform: rotate(192deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(10) {
-        transform: rotate(216deg) translate(318px);
+        transform: rotate(216deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(11) {
-        transform: rotate(240deg) translate(318px);
+        transform: rotate(240deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(12) {
-        transform: rotate(264deg) translate(318px);
+        transform: rotate(264deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(13) {
-        transform: rotate(288deg) translate(318px);
+        transform: rotate(288deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(14) {
-        transform: rotate(312deg) translate(318px);
+        transform: rotate(312deg) translate(330px);
     }
     
     .outer-ring .outer-tile:nth-child(15) {
-        transform: rotate(336deg) translate(318px);
+        transform: rotate(336deg) translate(330px);
     }
     
     
     .middle-ring .middle-tile:nth-child(1) {
-        transform: rotate(0deg) translate(212px);
+        transform: rotate(0deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(2) {
-        transform: rotate(36deg) translate(212px);
+        transform: rotate(36deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(3) {
-        transform: rotate(72deg) translate(212px);
+        transform: rotate(72deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(4) {
-        transform: rotate(108deg) translate(212px);
+        transform: rotate(108deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(5) {
-        transform: rotate(144deg) translate(212px);
+        transform: rotate(144deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(6) {
-        transform: rotate(180deg) translate(212px);
+        transform: rotate(180deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(7) {
-        transform: rotate(216deg) translate(212px);
+        transform: rotate(216deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(8) {
-        transform: rotate(252deg) translate(212px);
+        transform: rotate(252deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(9) {
-        transform: rotate(288deg) translate(212px);
+        transform: rotate(288deg) translate(220px);
     }
     
     .middle-ring .middle-tile:nth-child(10) {
-        transform: rotate(324deg) translate(212px);
+        transform: rotate(324deg) translate(220px);
     }
     
     
     .inner-ring .inner-tile:nth-child(1) {
-        transform: rotate(0deg) translate(106px);
+        transform: rotate(0deg) translate(110px);
     }
     
     .inner-ring .inner-tile:nth-child(2) {
-        transform: rotate(72deg) translate(106px);
+        transform: rotate(72deg) translate(110px);
     }
     
     .inner-ring .inner-tile:nth-child(3) {
-        transform: rotate(144deg) translate(106px);
+        transform: rotate(144deg) translate(110px);
     }
     
     .inner-ring .inner-tile:nth-child(4) {
-        transform: rotate(216deg) translate(106px);
+        transform: rotate(216deg) translate(110px);
     }
     
     .inner-ring .inner-tile:nth-child(5) {
-        transform: rotate(288deg) translate(106px);
+        transform: rotate(288deg) translate(110px);
     }
 
 }
 
-/*
-@media (max-width: 1024px) {
+/***********Laptop Size Game*/
+
+@media (min-width: 1025px) {
     .timer { 
-        min-height: 70px;
-        width: 70px;
+        min-height: 90px;
+        width: 90px;
         background-color: white;
         border-radius: 50%;
         position: absolute;
@@ -627,166 +638,380 @@ nav ul li a {
     }
     
     .outer-tile {
-        width: 35px;
-        height: 35px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
-        top: 48%;
-        left: 45%;
+        top: 47%;
+        left: 48%;
     }
     
     .middle-tile {
-        width: 35px;
-        height: 35px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
-        top: 48%;
-        left: 45%;
+        top: 47%;
+        left: 48%;
     }
     
     .inner-tile {
-        width: 35px;
-        height: 35px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
-        background-color: black;
+        background-color: #ff68a8;
         z-index: 100;
         position: absolute;
-        top: 48%;
-        left: 45%;
+        top: 47%;
+        left: 48%;
     }
     
     .outer-ring .outer-tile:nth-child(1) {
-        transform: rotate(0deg) translate(150px);
+        transform: rotate(0deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(2) {
-        transform: rotate(24deg) translate(150px);
+        transform: rotate(24deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(3) {
-        transform: rotate(48deg) translate(150px);
+        transform: rotate(48deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(4) {
-        transform: rotate(72deg) translate(150px);
+        transform: rotate(72deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(5) {
-        transform: rotate(96deg) translate(150px);
+        transform: rotate(96deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(6) {
-        transform: rotate(120deg) translate(150px);
+        transform: rotate(120deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(7) {
-        transform: rotate(144deg) translate(150px);
+        transform: rotate(144deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(8) {
-        transform: rotate(168deg) translate(150px);
+        transform: rotate(168deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(9) {
-        transform: rotate(192deg) translate(150px);
+        transform: rotate(192deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(10) {
-        transform: rotate(216deg) translate(150px);
+        transform: rotate(216deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(11) {
-        transform: rotate(240deg) translate(150px);
+        transform: rotate(240deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(12) {
-        transform: rotate(264deg) translate(150px);
+        transform: rotate(264deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(13) {
-        transform: rotate(288deg) translate(150px);
+        transform: rotate(288deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(14) {
-        transform: rotate(312deg) translate(150px);
+        transform: rotate(312deg) translate(216px);
     }
     
     .outer-ring .outer-tile:nth-child(15) {
-        transform: rotate(336deg) translate(150px);
+        transform: rotate(336deg) translate(216px);
     }
     
     
     .middle-ring .middle-tile:nth-child(1) {
-        transform: rotate(0deg) translate(100px);
+        transform: rotate(0deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(2) {
-        transform: rotate(36deg) translate(100px);
+        transform: rotate(36deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(3) {
-        transform: rotate(72deg) translate(100px);
+        transform: rotate(72deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(4) {
-        transform: rotate(108deg) translate(100px);
+        transform: rotate(108deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(5) {
-        transform: rotate(144deg) translate(100px);
+        transform: rotate(144deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(6) {
-        transform: rotate(180deg) translate(100px);
+        transform: rotate(180deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(7) {
-        transform: rotate(216deg) translate(100px);
+        transform: rotate(216deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(8) {
-        transform: rotate(252deg) translate(100px);
+        transform: rotate(252deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(9) {
-        transform: rotate(288deg) translate(100px);
+        transform: rotate(288deg) translate(144px);
     }
     
     .middle-ring .middle-tile:nth-child(10) {
-        transform: rotate(324deg) translate(100px);
+        transform: rotate(324deg) translate(144px);
     }
     
     
     .inner-ring .inner-tile:nth-child(1) {
-        transform: rotate(0deg) translate(50px);
+        transform: rotate(0deg) translate(72px);
     }
     
     .inner-ring .inner-tile:nth-child(2) {
-        transform: rotate(72deg) translate(50px);
+        transform: rotate(72deg) translate(72px);
     }
     
     .inner-ring .inner-tile:nth-child(3) {
-        transform: rotate(144deg) translate(50px);
+        transform: rotate(144deg) translate(72px);
     }
     
     .inner-ring .inner-tile:nth-child(4) {
-        transform: rotate(216deg) translate(50px);
+        transform: rotate(216deg) translate(72px);
     }
     
     .inner-ring .inner-tile:nth-child(5) {
-        transform: rotate(288deg) translate(50px);
+        transform: rotate(288deg) translate(72px);
     }
 
-}
-*/
+
 
 footer {
     background-color: #2da7d9;
     min-height: 20vh;
     bottom: 0;
     right: 0;
+}
+}
+
+/***********Desktop Size Game*/
+
+@media (min-width: 1440px) {
+    .timer { 
+        min-height: 150px;
+        width: 150px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .outer-tile {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #ff68a8;
+        z-index: 100;
+        position: absolute;
+        top: 46.5%;
+        left: 48%;
+    }
+    
+    .middle-tile {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #ff68a8;
+        z-index: 100;
+        position: absolute;
+        top: 46%;
+        left: 48%;
+    }
+    
+    .inner-tile {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #ff68a8;
+        z-index: 100;
+        position: absolute;
+        top: 46.5%;
+        left: 48%;
+    }
+    
+    .outer-ring .outer-tile:nth-child(1) {
+        transform: rotate(0deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(2) {
+        transform: rotate(24deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(3) {
+        transform: rotate(48deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(4) {
+        transform: rotate(72deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(5) {
+        transform: rotate(96deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(6) {
+        transform: rotate(120deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(7) {
+        transform: rotate(144deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(8) {
+        transform: rotate(168deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(9) {
+        transform: rotate(192deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(10) {
+        transform: rotate(216deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(11) {
+        transform: rotate(240deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(12) {
+        transform: rotate(264deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(13) {
+        transform: rotate(288deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(14) {
+        transform: rotate(312deg) translate(348px);
+    }
+    
+    .outer-ring .outer-tile:nth-child(15) {
+        transform: rotate(336deg) translate(348px);
+    }
+    
+    
+    .middle-ring .middle-tile:nth-child(1) {
+        transform: rotate(0deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(2) {
+        transform: rotate(36deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(3) {
+        transform: rotate(72deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(4) {
+        transform: rotate(108deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(5) {
+        transform: rotate(144deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(6) {
+        transform: rotate(180deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(7) {
+        transform: rotate(216deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(8) {
+        transform: rotate(252deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(9) {
+        transform: rotate(288deg) translate(232px);
+    }
+    
+    .middle-ring .middle-tile:nth-child(10) {
+        transform: rotate(324deg) translate(232px);
+    }
+    
+    
+    .inner-ring .inner-tile:nth-child(1) {
+        transform: rotate(0deg) translate(116px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(2) {
+        transform: rotate(72deg) translate(116px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(3) {
+        transform: rotate(144deg) translate(116px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(4) {
+        transform: rotate(216deg) translate(116px);
+    }
+    
+    .inner-ring .inner-tile:nth-child(5) {
+        transform: rotate(288deg) translate(116px);
+    }
+
+
+footer {
+    background-color: #2da7d9;
+    min-height: 10vh;
+    bottom: 0;
+    right: 0;
+}
+}
+
+
+/***********In Game Scoreboard*/
+
+.score-tally {
+    width: 33%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.reset-button {
+    width: 33%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+
+.toggle-switch {
+    width: 33%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
 }
