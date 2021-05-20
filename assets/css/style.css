@@ -54,7 +54,7 @@ nav ul li a {
 
 .game-body {
     width: 100%;
-    min-height: 100%;
+    min-height: 50vw;
     margin: 0 auto;
     text-align: center;
     padding: 0;
@@ -70,7 +70,8 @@ nav ul li a {
     background-color: #F8E924;
     margin: 0 auto;
     padding: 0;
-}
+    perspective: 100px;
+} 
 
 .outer-ring {
     border-radius: 50%;
@@ -78,6 +79,9 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+    perspective: 1000px;
+
 }
 
 
@@ -87,6 +91,8 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+    perspective: 1000px;
 }
 
 .inner-ring {
@@ -95,6 +101,41 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.tile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.outer-ring:hover .tile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.middle-ring:hover .tile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.inner-ring:hover .tile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
 }
 
 .timer { 
@@ -109,14 +150,29 @@ nav ul li a {
     transform: translate(-50%, -50%);
 }
 
+.timer i {
+    font-size: 5.5em; 
+    color: lime;   
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    width: 1.4em;
+    height: 1.1em;
+    display: block;
+}
+
 .tile-back {
     width: 5em;
     height: 5em;
     border-radius: 50%;
     border: solid 1px black;
     background-color: #ff68a8;
-    z-index: 101;
     position: absolute;
+    
 }
 
 .tile-front {
@@ -125,19 +181,34 @@ nav ul li a {
     border-radius: 50%;
     border: solid 1px black;
     background-color: white;
-    z-index: 100;
     position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    transform: rotateY(180deg);
 }
 
-.tile-back:hover {
-    border: solid 2px white;
+.tile-front i {
+    font-size: 2.5em;    
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    width: 1.1em;
+    height: 1.1em;
+    display: block;
 }
 
-.tile-front:hover {
-    width: 5.5em;
-    height: 5.5em;
-    border: solid 2px white;
+.tile:hover .tile-back {
+    transform: rotateY(-180deg);
 }
+
+.tile:hover .tile-front {
+    transform: rotateY(0);
+}
+
 
 .outer-ring .tile:nth-child(1) {
     transform: rotate(0deg) translate(19em);
@@ -263,7 +334,7 @@ nav ul li a {
 
 
 
-/***********Mobile Size Game*/
+/***********Mobile Size Game
 
 @media (max-width: 480px) {
     .timer { 
@@ -430,8 +501,174 @@ nav ul li a {
     
 }
 
-/***********Tablet Size Game*/
+@media (max-width: 576px) {
+    .timer { 
+        min-height: 6.5em;
+        width: 6.5em;
+        background-color: white;
+        border-radius: 50%;
+        border: solid 1px black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .tile-back {
+        width: 3.25em;
+        height: 3.25em;
+        border-radius: 50%;
+        border: solid 1px black;
+        background-color: #ff68a8;
+        z-index: 101;
+        position: absolute;
+    }
+    
+    .tile-front {
+        width: 3.25em;
+        height: 3.25em;
+        border-radius: 50%;
+        border: solid 1px black;
+        background-color: white;
+        z-index: 100;
+        position: absolute;
+    }
+    
 
+
+    .tile-back:hover {
+        border: solid 2px white;
+    }
+    
+    .tile-front:hover {
+        border: solid 2px white;
+    }
+    
+    .outer-ring .tile:nth-child(1) {
+        transform: rotate(0deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(2) {
+        transform: rotate(24deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(3) {
+        transform: rotate(48deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(4) {
+        transform: rotate(72deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(5) {
+        transform: rotate(96deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(6) {
+        transform: rotate(120deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(7) {
+        transform: rotate(144deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(8) {
+        transform: rotate(168deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(9) {
+        transform: rotate(192deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(10) {
+        transform: rotate(216deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(11) {
+        transform: rotate(240deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(12) {
+        transform: rotate(264deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(13) {
+        transform: rotate(288deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(14) {
+        transform: rotate(312deg) translate(12.75em);
+    }
+    
+    .outer-ring .tile:nth-child(15) {
+        transform: rotate(336deg) translate(12.75em);
+    }
+    
+    
+    .middle-ring .tile:nth-child(1) {
+        transform: rotate(0deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(2) {
+        transform: rotate(36deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(3) {
+        transform: rotate(72deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(4) {
+        transform: rotate(108deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(5) {
+        transform: rotate(144deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(6) {
+        transform: rotate(180deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(7) {
+        transform: rotate(216deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(8) {
+        transform: rotate(252deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(9) {
+        transform: rotate(288deg) translate(8em);
+    }
+    
+    .middle-ring .tile:nth-child(10) {
+        transform: rotate(324deg) translate(8em);
+    }
+    
+    .inner-ring .tile:nth-child(1) {
+        transform: rotate(0deg) translate(3.25em);
+    }
+    
+    .inner-ring .tile:nth-child(2) {
+        transform: rotate(72deg) translate(3.25em);
+    }
+    
+    .inner-ring .tile:nth-child(3) {
+        transform: rotate(144deg) translate(3.25em);
+    }
+    
+    .inner-ring .tile:nth-child(4) {
+        transform: rotate(216deg) translate(3.25em);
+    }
+    
+    .inner-ring .tile:nth-child(5) {
+        transform: rotate(288deg) translate(3.25em);
+    }
+    
+}
+*/
+/***********Tablet Size Game*/
+/*
 @media (min-width: 768px) {
     .timer { 
         min-height: 9em;
@@ -595,9 +832,9 @@ nav ul li a {
         transform: rotate(288deg) translate(4.5em);
     }
 }
-
+*/
 /***********Laptop Size Game*/
-
+/*
 @media (min-width: 1025px) {
     .timer { 
         min-height: 7em;
@@ -761,9 +998,10 @@ nav ul li a {
         transform: rotate(288deg) translate(3.5em);
     }
 }
-
+*/
 /***********Desktop Size Game*/
 
+/*
 @media (min-width: 1440px) {
     .timer { 
         min-height: 10em;
@@ -783,8 +1021,6 @@ nav ul li a {
         border-radius: 50%;
         border: solid 1px black;
         background-color: #ff68a8;
-        z-index: 101;
-        position: absolute;
     }
     
     .tile-front {
@@ -793,19 +1029,24 @@ nav ul li a {
         border-radius: 50%;
         border: solid 1px black;
         background-color: white;
-        z-index: 100;
-        position: absolute;
+        z-index: 101;
+    }
+
+    .tile .tile-front i {
+        height: 90%;
+        width: 90%;
+        color: black;
+        margin: 0 auto;
     }
     
-    .tile-back:hover {
-        border: solid 2px white;
+    .tile:hover .tile-back {
+        transform: rotateY(-180deg);
     }
     
-    .tile-front:hover {
-        width: 5.5em;
-        height: 5.5em;
-        border: solid 2px white;
+    .tile:hover .tile-front {
+        transform: rotateY(0);
     }
+    
     
     .outer-ring .tile:nth-child(1) {
         transform: rotate(0deg) translate(19em);
@@ -940,8 +1181,7 @@ nav ul li a {
     background-color: white;
     color: black;
     position: absolute;
-    bottom: 10%;
-    left: 5%;
+    bottom: 5%;
 }
 
 .reset-button {
@@ -951,8 +1191,8 @@ nav ul li a {
     background-color: white;
     color: black;
     position: absolute;
-    bottom: 20%;
-    right: 5%;
+    bottom: 10%;
+    right: 0;
 }
 
 .toggle-switch {
@@ -962,6 +1202,6 @@ nav ul li a {
     background-color: white;
     color: black;
     position: absolute;
-    bottom: 10%;
-    right: 5%;
+    bottom: 5%;
+    right: 0;
 }
