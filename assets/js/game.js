@@ -1,5 +1,11 @@
+
 //ensure tiles have clicked functionality in place
-let tile = document.getElementsByClassName("tile");
+function showTile(e) {
+    const target = e.currentTarget;
+    target.className = target.className
+        .replace("tile-back", "")
+        .trim();
+}
 
 
 

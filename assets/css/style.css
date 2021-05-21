@@ -70,7 +70,6 @@ nav ul li a {
     background-color: #F8E924;
     margin: 0 auto;
     padding: 0;
-    perspective: 100px;
 } 
 
 .outer-ring {
@@ -79,7 +78,6 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent;
     perspective: 1000px;
 
 }
@@ -91,7 +89,6 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent;
     perspective: 1000px;
 }
 
@@ -101,9 +98,9 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent;
     perspective: 1000px;
 }
+
 
 .tile {
     position: relative;
@@ -111,14 +108,17 @@ nav ul li a {
     height: 100%;
     text-align: center;
     transition: transform 1s;
+    transform: scale(1);
     transform-style: preserve-3d;
 }
 
+
+/*
 .outer-ring:hover .tile {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -126,7 +126,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
 }
 
@@ -134,10 +134,10 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
+*/
 .timer { 
     min-height: 10em;
     width: 10em;
@@ -172,7 +172,6 @@ nav ul li a {
     border: solid 1px black;
     background-color: #ff68a8;
     position: absolute;
-    
 }
 
 .tile-front {
@@ -184,7 +183,6 @@ nav ul li a {
     position: absolute;
     padding: 0;
     margin: 0 auto;
-    transform: rotateY(180deg);
 }
 
 .tile-front i {
@@ -201,14 +199,13 @@ nav ul li a {
     display: block;
 }
 
-.tile:hover .tile-back {
-    transform: rotateY(-180deg);
+.tile-front,.tile-back:hover {
+    border: solid 2px white;
 }
 
-.tile:hover .tile-front {
-    transform: rotateY(0);
+.tile .tile-front {
+    transform: rotateY(180deg);
 }
-
 
 .outer-ring .tile:nth-child(1) {
     transform: rotate(0deg) translate(19em);
