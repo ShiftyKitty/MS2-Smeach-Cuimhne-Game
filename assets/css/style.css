@@ -112,6 +112,15 @@ nav ul li a {
     transform-style: preserve-3d;
 }
 
+.tile.done {
+    cursor: default;
+}
+
+.tile.done:hover {
+    cursor: default;
+    box-shadow: none;
+}
+
 
 /*
 .outer-ring:hover .tile {
