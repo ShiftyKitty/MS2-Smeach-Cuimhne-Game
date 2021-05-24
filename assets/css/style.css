@@ -174,15 +174,6 @@ nav ul li a {
     display: block;
 }
 
-.tile-back {
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-    border: solid 1px black;
-    background-color: #ff68a8;
-    position: absolute;
-}
-
 .tile-front {
     width: 5em;
     height: 5em;
@@ -214,6 +205,16 @@ nav ul li a {
 
 .tile .tile-front {
     transform: rotateY(180deg);
+}
+
+.tile-back {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-color: #ff68a8;
+    color: #ff68a8;
+    position: absolute;
 }
 
 .outer-ring .tile:nth-child(1) {
