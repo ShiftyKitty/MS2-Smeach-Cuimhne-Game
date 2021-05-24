@@ -204,7 +204,7 @@ nav ul li a {
 }
 
 .tile .tile-front {
-    transform: rotateY(180deg);
+    transform: rotateY(-360deg);
 }
 
 .tile-back {
