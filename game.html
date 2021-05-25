@@ -199,10 +199,10 @@
                         </div>
                     </div> 
                 </div>
-                <div class="timer" onclick="shuffle()">
+                <div class="timer">
                     <i class="fas fa-play"></i></div>
                 <div class="score-tally">
-                    Incorrect Scores: <span class="IncorrectScore">0</span>
+                    Incorrect Scores: <span class="incorrect-score">0</span>
                 </div> 
                 <br>  
                 <div class="reset-button">
@@ -221,7 +221,12 @@
         let stopSelect = false;
         let tilesMatched = 0;
 
-       
+        function scoreTally () {
+            if (tilesWrong) {
+                document.querySelector(".incorrect-score").innerHTML=`${tilesWrong}`
+            }
+        }
+        console.log(scoreTally);
         $(".inner-ring").html($(".inner-ring .tile").sort(function(){
         return Math.random()-0.5;
         }));
@@ -317,9 +322,7 @@
             return;
             }
 
-            target.className = target.className
-             .replace("tile-back", " ")
-             .trim();
+            target.className = target.className.replace("tile-back", " ").trim();
             target.className += " done";
 
         if (!selectedTile) {
@@ -333,19 +336,26 @@
                 target.getAttribute("data-icon")
             ) {
                 stopSelect = true;
+                let tilesWrong = document.querySelector(".incorrect-score").innerHTML;
+                tilesWrong++;
+                document.querySelector(".incorrect-score").innerHTML = tilesWrong;
+
+                
                 setTimeout(() => {
                     selectedTile.className = selectedTile.className.replace("done", " ").trim() + " tile-back";
                     target.className = target.className.replace("done", " ").trim() + " tile-back";
 
                     selectedTile = null;
                     stopSelect = false;
+                    
                 }, 500);
+                console.log(tilesWrong)
             } else {
                 tilesMatched++;
                 selectedTile = null;
                 if (tilesMatched === 15) {
                     setTimeout(() => 
-                    {alert("Congratulations")}, 1000);
+                    {alert("Congratulations")}, 500);
                 }
             }
         }
