@@ -199,7 +199,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="timer">
+                <div class="timer" onclick="startGame()">
                     <i class="fas fa-play"></i></div>
                 <div class="score-tally">
                     Incorrect Scores: <span class="incorrect-score">0</span>
@@ -217,27 +217,58 @@
     Social Media links potentially
     </footer>
     <script>
-        let selectedTile = null;
-        let stopSelect = false;
-        let tilesMatched = 0;
+        
+        function startGame () {
+            document.querySelector(".timer").addEventListener("click", function () {
+            // when user clicks, game initiates and board shuffles
+                shuffleGame();
+            // play button disappears and countdown begins
+            // all tile fronts present during this 
+                let gameStartIn = 6;
+                let gameCountUp = 0;
+                let countDown = setInterval(timer, 1000);
 
-        function scoreTally () {
-            if (tilesWrong) {
-                document.querySelector(".incorrect-score").innerHTML=`${tilesWrong}`
-            }
-        }
-        console.log(scoreTally);
-        $(".inner-ring").html($(".inner-ring .tile").sort(function(){
-        return Math.random()-0.5;
-        }));
+                function timer () {
+                    gameStartIn = gameStartIn - 1;
+                    if (gameStartIn <= -1)
+                {
+                    clearInterval(countDown);
+                    document.querySelector(".timer").innerHTML = `
+                    GO!!`;
+                                 
+                    return;
+                }
+                    document.querySelector(".timer").innerHTML = gameStartIn;
+                };
+                /*
+                let gameCountUp = 0;
+                let countUp = setInterval(timeInc, 1000);
 
-        $(".middle-ring").html($(".middle-ring .tile").sort(function(){
-        return Math.random()-0.5;
-        }));
+                function timeInc () {
+                    ++gameCountUp;
+                    document.querySelector(".timer").innerHTML = countUp;
 
-        $(".outer-ring").html($(".outer-ring .tile").sort(function(){
-        return Math.random()-0.5;
-        }));
+                }
+                */
+            });
+        };
+        startGame();
+
+        function shuffleGame () {
+            $(".inner-ring").html($(".inner-ring .tile").sort(function(){
+            return Math.random()-0.5;
+            }));
+
+            $(".middle-ring").html($(".middle-ring .tile").sort(function(){
+             return Math.random()-0.5;
+            }));
+
+            $(".outer-ring").html($(".outer-ring .tile").sort(function(){
+            return Math.random()-0.5;
+            }));
+        };
+
+        shuffleGame();
         
         /*
         var tiles = $(".tile");
@@ -311,6 +342,10 @@
             tileB.setAttribute("data-icon", icon);
         }
 */
+        let selectedTile = null;
+        let stopSelect = false;
+        let tilesMatched = 0;
+
         function showTile(e) {
             const target = e.currentTarget;
 
@@ -336,6 +371,7 @@
                 target.getAttribute("data-icon")
             ) {
                 stopSelect = true;
+                //Increments incorrect matches and adds to scoreboard
                 let tilesWrong = document.querySelector(".incorrect-score").innerHTML;
                 tilesWrong++;
                 document.querySelector(".incorrect-score").innerHTML = tilesWrong;

@@ -44,7 +44,7 @@ let shuffleTiles = function (arr) {
     return arr;
 };
 
-let newOrder = shuffleTiles(icons)
+let newOrder = shuffleTiles(icons);
 
 //ensures correctly selected tiles are matched correctly
 //incorrect tile match leads to selected tiles changing places
