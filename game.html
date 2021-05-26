@@ -223,37 +223,42 @@
             // when user clicks, game initiates and board shuffles
                 shuffleGame();
             // play button disappears and countdown begins
-            // all tile fronts present during this 
                 let gameStartIn = 6;
-                let gameCountUp = 0;
-                let countDown = setInterval(timer, 1000);
+                let countDown = setInterval(gameStartTimer, 1000);
 
-                function timer () {
+                function gameStartTimer () {
                     gameStartIn = gameStartIn - 1;
-                    if (gameStartIn <= -1)
-                {
-                    clearInterval(countDown);
-                    document.querySelector(".timer").innerHTML = `
-                    GO!!`;
-                                 
-                    return;
+
+                    if (gameStartIn <= -1) {
+                        clearInterval(countDown);
+                        let go = document.querySelector(".timer").innerHTML = `
+                        GO!!`;          
+                        return;
                 }
                     document.querySelector(".timer").innerHTML = gameStartIn;
                 };
-                /*
-                let gameCountUp = 0;
-                let countUp = setInterval(timeInc, 1000);
+                    let gameSeconds = 0;
+                    let timeIncrease = document.querySelector(".timer");
+                    let countUp = setInterval(countUpTimer, 1000);
 
-                function timeInc () {
-                    ++gameCountUp;
-                    document.querySelector(".timer").innerHTML = countUp;
-
-                }
-                */
-            });
+                    function countUpTimer () {
+                        gameSeconds = gameSeconds + 1;
+                        if (gameStartTimer === 0) {
+                            setTimeout(() => 
+                            {countUpTimer()}, 500);
+                    }
+                    
+                        
+                };
+            // all tile fronts present during this 
+            // Game timer kicks in
+                
+                });
         };
+        
         startGame();
-
+            
+                
         function shuffleGame () {
             $(".inner-ring").html($(".inner-ring .tile").sort(function(){
             return Math.random()-0.5;
@@ -267,7 +272,6 @@
             return Math.random()-0.5;
             }));
         };
-
         shuffleGame();
         
         /*
@@ -385,13 +389,14 @@
                     stopSelect = false;
                     
                 }, 500);
-                console.log(tilesWrong)
             } else {
                 tilesMatched++;
                 selectedTile = null;
                 if (tilesMatched === 15) {
                     setTimeout(() => 
-                    {alert("Congratulations")}, 500);
+                    {alert("Congratulations")}, 250);
+                    clearTimeout(countUp);
+                    return;
                 }
             }
         }
