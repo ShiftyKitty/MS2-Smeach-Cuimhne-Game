@@ -272,9 +272,15 @@
                         gameSeconds = gameSeconds + 1;
 
                         if (gameSeconds === 0) {
+                            
+                            
+                        } else if ($(".reset-button").click(function(){
+                            gameSeconds = 0;
                             clearInterval(countUp);
                             return;
-                        }
+                        })
+                        ); 
+
                         document.querySelector(".timer").innerHTML = gameSeconds;
                         $(this).addClass("null");
                         allTiles.children().removeClass(" done");
@@ -291,22 +297,18 @@
                 });
 
                 $(".reset-button").click(function(){
-                    /*
                     let timer = $(this).siblings(".game-board").children(".timer");
-                    timer.addClass("timer").addClass("fas fa-play").addClass("timer-icon-style").removeClass("null").html("<i></i>");
-                    */
+                    let resetTimer = timer.addClass("timer").addClass("timer-icon-style").removeClass("null");
+                        resetTimer = document.querySelector(".timer").innerHTML = `<i class="fas fa-play"></i>`;
+                        $(this).siblings(".game-board").children(".timer").children().innerHTML = ` `;
+                    
                     $(this).siblings(".game-board").children().children().children().addClass("tile-back");
 
                     let tilesWrong = document.querySelector(".incorrect-score").innerHTML;
                     tilesWrong = 0;
                     document.querySelector(".incorrect-score").innerHTML = tilesWrong;
 
-                    let resetClock = document.querySelector(".timer").innerHTML = gameSeconds;
-                    gameSeconds = 0;
-                    document.querySelector(".timer").innerHTML = resetClock;
-
                 });
-            
         
 
             /*
