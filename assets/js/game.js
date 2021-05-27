@@ -1,4 +1,4 @@
-
+/*
 //ensure tiles have clicked functionality in place
 function showTile(e) {
     const target = e.currentTarget;
@@ -79,4 +79,4 @@ function resetGame () {
 function switchOff () {
 
 }
-
+*/
