@@ -43,7 +43,15 @@
     <div class="game-body">
         <h3>Smeach Cuimhne</h3>
         <div class="game-board">
-
+            <div class="congrats-score-message active">
+                <h4>Congratulations!!!</h4>
+                <p>You completed Smeach Cuimhne in <span>0</span> seconds.</p>
+                <p>You made <span>0</span> Incorrect Matches.</p>
+                <p>Your overall score is <span>0</span>.</p>
+                <p>Enter your name below to add your result to the Scoreboard:</p>
+                <input>
+                <button>Enter to Scoreboard</button>
+            </div>
             <div class="outer-ring">
                 <div class="tile">
                     <div class="tile-back tile-front" data-icon="female" onclick="showTile(event)">
@@ -526,7 +534,10 @@
                 selectedTile = null;
                 if (tilesMatched === 15) {
                     setTimeout(() => 
-                    {alert("Congratulations")}, 250);
+                    {$(".congrats-score-message").load(function() {
+                        $(this).addClass("active");
+                    });
+                    }, 250);
                     clearTimeout(countUp);
                     return;
                 }

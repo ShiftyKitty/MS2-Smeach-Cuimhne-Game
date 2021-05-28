@@ -29,7 +29,9 @@ h6 {
     color: #F8E924;
 }
 
-
+p {
+    font-family: 'Raleway', sans-serif;
+}
 
 header {
     background-color: #2da7d9;
@@ -46,7 +48,9 @@ nav ul li a {
 
 .nav-game-button {
     position: absolute;
-    left: 46%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid white;
     font-family: 'Righteous', cursive;
     font-size: 200%;
@@ -71,6 +75,43 @@ nav ul li a {
     margin: 0 auto;
     padding: 0;
 } 
+
+.congrats-score-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    z-index: 100;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.congrats-score-message.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.congrats-score-message button {
+    padding: 2px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
 
 .outer-ring {
     border-radius: 50%;
