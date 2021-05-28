@@ -490,6 +490,23 @@
                 target.getAttribute("data-icon")
             ) {
                 stopSelect = true;
+                //Swap target tile with incorrect selected tile
+                var TileA = target;
+                var TileB = selectedTile;
+
+                
+                $.fn.swap = function (elem) 
+                {
+                elem = elem.jquery ? elem : $(elem);
+                return this.each(function () 
+                {
+                $('<span></span>').insertBefore(this).before(elem.before(this)).remove();
+                });
+                };
+
+                $(TileA).swap(TileB);
+                
+
                 //Increments incorrect matches and adds to scoreboard
                 let tilesWrong = document.querySelector(".incorrect-score").innerHTML;
                 tilesWrong++;
@@ -503,7 +520,7 @@
                     selectedTile = null;
                     stopSelect = false;
                     
-                }, 500);
+                }, 800);
             } else {
                 tilesMatched++;
                 selectedTile = null;
