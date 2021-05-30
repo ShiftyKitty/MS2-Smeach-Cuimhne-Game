@@ -113,6 +113,11 @@ nav ul li a {
     pointer-events: none;
 }
 
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
 .outer-ring {
     border-radius: 50%;
     position: absolute;

@@ -43,7 +43,7 @@
     <div class="game-body">
         <h3>Smeach Cuimhne</h3>
         <div class="game-board">
-            <div class="congrats-score-message active">
+            <div class="congrats-score-message">
                 <h4>Congratulations!!!</h4>
                 <p>You completed Smeach Cuimhne in <span>0</span> seconds.</p>
                 <p>You made <span>0</span> Incorrect Matches.</p>
@@ -52,6 +52,7 @@
                 <input>
                 <button>Enter to Scoreboard</button>
             </div>
+            
             <div class="outer-ring">
                 <div class="tile">
                     <div class="tile-back tile-front" data-icon="female" onclick="showTile(event)">
@@ -128,7 +129,8 @@
                         <i class="fas fa-gem"></i>
                     </div>
                 </div> 
-            </div>                
+            </div>
+
             <div class="middle-ring">
                 <div class="tile">
                     <div class="tile-back tile-front" data-icon="gem" onclick="showTile(event)">
@@ -181,6 +183,7 @@
                     </div>
                 </div> 
                 </div>
+
                 <div class="inner-ring">
                     <div class="tile" data-icon="seedling">
                         <div class="tile-back tile-front" data-icon="seedling" onclick="showTile(event)">
@@ -208,6 +211,7 @@
                         </div>
                     </div> 
                 </div>
+
                 <div class="timer">
                     <i class="fas fa-play timer-icon-style"></i></div>
                 </div>
@@ -221,6 +225,7 @@
                 <div class="toggle-switch">
                     <h5>Turn Off/On Switching Mode</h5>
                 </div>
+                <div id="overlay"></div>
         </div>
         
     </div>
@@ -532,13 +537,17 @@
             } else {
                 tilesMatched++;
                 selectedTile = null;
+                let congratsMessage = document.querySelector(".congrats-score-message");
+                let overlay = document.querySelector("#overlay");
+                
                 if (tilesMatched === 15) {
                     setTimeout(() => 
-                    {$(".congrats-score-message").load(function() {
-                        $(this).addClass("active");
-                    });
+                    {
+                    congratsMessage.classList.add("active");
+                    overlay.classList.add("active")
+                    
                     }, 250);
-                    clearTimeout(countUp);
+                    
                     return;
                 }
             }
