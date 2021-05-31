@@ -45,9 +45,9 @@
         <div class="game-board">
             <div class="congrats-score-message">
                 <h4>Congratulations!!!</h4>
-                <p>You completed Smeach Cuimhne in <span>0</span> seconds.</p>
-                <p>You made <span>0</span> Incorrect Matches.</p>
-                <p>Your overall score is <span>0</span>.</p>
+                <p>You completed Smeach Cuimhne in <span id="final-time">0</span> seconds.</p>
+                <p>You made <span id="final-incorrect-score">0</span> Incorrect Matches.</p>
+                <p>Your overall score is <span id="final-overall-score">0</span>.</p>
                 <p>Enter your name below to add your result to the Scoreboard:</p>
                 <input>
                 <button>Enter to Scoreboard</button>
@@ -537,14 +537,40 @@
             } else {
                 tilesMatched++;
                 selectedTile = null;
+
                 let congratsMessage = document.querySelector(".congrats-score-message");
                 let overlay = document.querySelector("#overlay");
+
+                let finalIncorrectScore =  $(document).ready(function() {
+                        $("#final-incorrect-score").html($(".incorrect-score").html());
+                    });
+
+                let finalTime =  $(document).ready(function() {
+                        $("#final-time").html($(".timer").html());
+                    });
+
+                let overallScore =  finalIncorrectScore + finalTime;
+                
                 
                 if (tilesMatched === 15) {
                     setTimeout(() => 
                     {
                     congratsMessage.classList.add("active");
-                    overlay.classList.add("active")
+                    overlay.classList.add("active");
+                    
+                    finalIncorrectScore;
+                    finalTime;
+                    $(document).ready(function() {
+                        $("#final-overall-score").html($(overallScore).html());
+                    });
+
+
+                    $(document).ready(function() {
+                        $(".timer").siblings().children().children().removeClass("tile-back");
+                    });
+
+                    allTiles.children().removeClass("tile-back");
+
                     
                     }, 250);
                     
