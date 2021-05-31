@@ -549,7 +549,10 @@
                         $("#final-time").html($(".timer").html());
                     });
 
-                let overallScore =  finalIncorrectScore + finalTime;
+                let overallScore =  $(document).ready(function() {
+                        $("#final-overall-score").html(Number($(".timer").html()) + Number($(".incorrect-score").html()));
+                    });
+   
                 
                 
                 if (tilesMatched === 15) {
@@ -560,16 +563,13 @@
                     
                     finalIncorrectScore;
                     finalTime;
-                    $(document).ready(function() {
-                        $("#final-overall-score").html($(overallScore).html());
-                    });
-
+                    overallScore;
+                    
 
                     $(document).ready(function() {
                         $(".timer").siblings().children().children().removeClass("tile-back");
                     });
-
-                    allTiles.children().removeClass("tile-back");
+                    
 
                     
                     }, 250);
