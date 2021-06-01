@@ -49,8 +49,8 @@
                 <p>You made <span id="final-incorrect-score">0</span> Incorrect Matches.</p>
                 <p>Your overall score is <span id="final-overall-score">0</span>.</p>
                 <p>Enter your name below to add your result to the Scoreboard:</p>
-                <input>
-                <button>Enter to Scoreboard</button>
+                <input id="input" placeholder="Enter your name...">
+                <button onclick="save();">Enter to Scoreboard</button>
             </div>
             
             <div class="outer-ring">
@@ -219,9 +219,9 @@
                     Incorrect Scores: <span class="incorrect-score">0</span>
                 </div> 
                 <br>  
-                <div class="reset-button">
-                    <h5>Reset Game</h5>
-                </div>
+                <button class="reset-button">
+                    Reset Game
+                </button>
                 <div class="toggle-switch">
                     <h5>Turn Off/On Switching Mode</h5>
                 </div>
@@ -570,14 +570,38 @@
                         $(".timer").siblings().children().children().removeClass("tile-back");
                     });
                     
-
-                    
                     }, 250);
                     
                     return;
                 }
             }
         }
+}
+
+function save() {
+    let username = document.querySelector("#input").value;
+    let timeCompleted = document.querySelector("#final-time").innerHTML;
+    let totalIncorrects = document.querySelector("#final-incorrect-score").innerHTML;
+    let overallScore = document.querySelector("#final-overall-score").innerHTML;
+
+    let new_data = [username, timeCompleted, totalIncorrects, overallScore];
+    
+    // if nothing saved at start then save empty array
+    if(localStorage.getItem("data") == null){
+        localStorage.setItem("data", "[]");
+    }
+
+    let old_data = JSON.parse(localStorage.getItem("data"));
+    old_data.push(new_data);
+
+    localStorage.setItem("data", JSON.stringify(old_data));
+}
+
+function view() {
+    if(localStorage.getItem("data") != null) {
+        //where I am sending info in array to be stored (temp)
+        document.getElementById("output").innerHTML = JSON.parse(localStorage.getItem("data"));
+    }
 }
     </script>
 </body>
