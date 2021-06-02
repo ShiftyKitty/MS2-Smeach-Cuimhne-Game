@@ -200,7 +200,7 @@ let timeCompleted = document.querySelector("#final-time").innerHTML;
 let totalIncorrects = document.querySelector("#final-incorrect-score").innerHTML;
 let overallScore = document.querySelector("#final-overall-score").innerHTML;
 
-let new_data = [{"Username":username, "Time Completed":timeCompleted, "Incorrect Tiles Matched":totalIncorrects, "Overall Score":overallScore}];
+let new_data = {"username":username, "time_completed":timeCompleted, "incorrect_tiles_matched":totalIncorrects, "overall_score":overallScore};
 
 // if nothing saved at start then save empty array
 if(localStorage.getItem("data") == null){
@@ -209,26 +209,49 @@ localStorage.setItem("data", "[]");
 
 let old_data = JSON.parse(localStorage.getItem("data"));
 old_data.push(new_data);
+old_data.sort( (a,b) => a.overall_score - b.overall_score)
 
 localStorage.setItem("data", JSON.stringify(old_data));
 }
 
+/*
 function display() {
 if(localStorage.getItem("data") != null) {
 //where I am sending info in array to be stored (temp)
 let userScore = JSON.parse(localStorage.getItem("data"));
 
-function buildScoreboard(data) {
-    let scoreboard = document.querySelector("#user-scoreboard");
+function buildTable(data){
+    
+    let table = document.getElementById("user-scoreboard");
 
-    for (let key in userScore) {
-        let row = scoreboard.insertRow();
-        for (var i = 0; i < userScore[key].length; i += 1) {
-            var cell = row.insertCell(i);
-            cell.innerHTML = userScore[key][i];
+    for (let i=0; i<data.length; i++){
+        let row = `<tr>
+                        <td>${data[i].username}</td>
+                        <td>${data[i].time_completed}</td>
+                        <td>${data[i].incorrect_tiles_matched}</td>
+                        <td>${data[i].overall_score}</td>
+                    </tr>`
+            table.innerHTML += row
     }
 }
+buildTable(userScore)
+}
+}
 
+
+function buildTable(data){
+    
+    let table = document.getElementById("user-scoreboard");
+
+    for (let i=0; i<data.length; i++){
+        let row = `<tr>
+                        <td>${data[i].username}</td>
+                        <td>${data[i].time_completed}</td>
+                        <td>${data[i].incorrect_tiles_matched}</td>
+                        <td>${data[i].overall_score}</td>
+                    </tr>`
+            table.innerHTML += row
+    }
 }
-}
-}
+buildTable(userScore[0]);
+*/
