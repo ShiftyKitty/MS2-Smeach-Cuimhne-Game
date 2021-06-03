@@ -12,7 +12,7 @@ html {
 
 body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     position: absolute;
     padding: 0;
 }
@@ -40,17 +40,25 @@ a {
 /***********Header*/
 header {
     background-color: #2da7d9;
+    border-bottom: 2px solid #F8E924;
     min-height: 15%;
     width: 100%;
 }
 
+nav ul li {
+    padding: 10px 0;
+    background-color: #F8E924;
+    color: #2da7d9;
+    border: solid 1px white;
+}
+
 nav ul li a {
     font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: 300;
-    border: solid 1px #F8E924;
+    color: #2da7d9;    
+    font-weight: 500;
+    font-size: 150%;
     text-decoration: none;
-
+    padding: 15px 0;
 }
 
 .nav-game-button {
@@ -58,14 +66,18 @@ nav ul li a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px 20px;
     border: 1px solid white;
     font-family: 'Righteous', cursive;
     font-size: 200%;
     text-decoration: none;
+    background-color: #F8E924;
+    color: #2da7d9;
 }
 
 .nav-game-button a {
     text-decoration: none;
+
 }
 
 .nav-game-button a:hover {
@@ -75,11 +87,26 @@ nav ul li a {
 /***********Index Page*/
 
 .index-body {
+    position: relative;
     width: 100%;
-    min-height: 50vw;
+    min-height: 100vh;
     margin: 0 auto;
     text-align: center;
     padding: 0;
+    background-color: #ff68a8;
+}
+
+.index-body::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: url("../images/sonder-quest-6_tSiHVv_y4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
 }
 
 .index-play-game {
@@ -90,6 +117,7 @@ nav ul li a {
     border: 1px solid black;
     width: 50%;
     height: 7%;
+    background-color: #F8E924;
 }
 
 .index-play-game h4 {
@@ -98,6 +126,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #2da7d9;
 }
 
 .index-play-game a {
@@ -116,6 +145,7 @@ nav ul li a {
     border: 1px solid black;
     width: 50%;
     height: 7%;
+    background-color: #F8E924;
 }
 
 .index-scoreboard h4 {
@@ -124,6 +154,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #2da7d9;
 }
 
 .index-scoreboard a {
@@ -287,7 +318,7 @@ nav ul li a {
 
 .timer i {
     font-size: 5.5em; 
-    color: lime;   
+    color: #32CD32;   
     margin: auto;
     top: 0;
     bottom: 0;
@@ -345,7 +376,6 @@ nav ul li a {
     transform: rotateY(-360deg);
 }
 
-/*
 .tile-back {
     width: 5em;
     height: 5em;
@@ -355,7 +385,7 @@ nav ul li a {
     color: #ff68a8;
     position: absolute;
 }
-*/
+
 .outer-ring .tile:nth-child(1) {
     transform: rotate(0deg) translate(19em);
 }
