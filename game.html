@@ -41,7 +41,7 @@
         </nav>
     </header>
     <div class="game-body">
-        <h3>Smeach Cuimhne</h3>
+        
         <div class="game-board">
             <div class="congrats-score-message">
                 <h4>Congratulations!!!</h4>
@@ -51,6 +51,7 @@
                 <p>Enter your name below to add your result to the Scoreboard:</p>
                 <input id="input" placeholder="Enter your name...">
                 <button onclick="save();">Enter to Scoreboard</button>
+                <button><a href="game.html">Return to Game</a></button>
             </div>
             
             <div class="outer-ring">
@@ -216,15 +217,12 @@
                     <i class="fas fa-play timer-icon-style"></i></div>
                 </div>
                 <div class="score-tally">
-                    Incorrect Scores: <span class="incorrect-score">0</span>
+                    <h5>Incorrect Scores: <span class="incorrect-score">0</span></h5>
                 </div> 
                 <br>  
                 <button class="reset-button">
-                    Reset Game
+                    <h5>Reset Game</h5>
                 </button>
-                <div class="toggle-switch">
-                    <h5>Turn Off/On Switching Mode</h5>
-                </div>
                 <div id="overlay"></div>
         </div>
         

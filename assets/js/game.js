@@ -32,11 +32,10 @@ $(document).ready(function(){
     
                 if (gameStartIn <= 0) {
                     clearInterval(countDown);
-                    let go = document.querySelector(".timer").innerHTML = `
-                    GO!!`;          
+                    document.querySelector(".timer").innerHTML = `<p>GO</p>`;          
                     return;
             }
-                document.querySelector(".timer").innerHTML = gameStartIn;
+                document.querySelector(".timer").innerHTML = `<p>${gameStartIn}</p>`
                 $(this).addClass("null");
         };
     }); 
@@ -59,7 +58,7 @@ $(document).ready(function(){
                     })
                     ); 
     
-                    document.querySelector(".timer").innerHTML = gameSeconds;
+                    document.querySelector(".timer").innerHTML = `<p>${gameSeconds}</p>`;
                     $(this).addClass("null");
                     allTiles.children().removeClass(" done");
                 };
@@ -162,11 +161,11 @@ $(document).ready(function(){
                 });
     
             let finalTime =  $(document).ready(function() {
-                    $("#final-time").html($(".timer").html());
+                    $("#final-time").html($(".timer p").html());
                 });
     
             let overallScore =  $(document).ready(function() {
-                    $("#final-overall-score").html(Number($(".timer").html()) + Number($(".incorrect-score").html()));
+                    $("#final-overall-score").html(Number($(".timer p").html()) + Number($(".incorrect-score").html()));
                 });
     
             
