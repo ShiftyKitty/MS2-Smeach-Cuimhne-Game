@@ -6,7 +6,6 @@ let userScores = JSON.parse(localStorage.getItem("data")) || [];
 
 userScoreboard.innerHTML = userScores.map(data => {
     return `<tr>
-                <td> </td>
                 <td>${data.username}</td>
                 <td>${data.time_completed}</td>
                 <td>${data.incorrect_tiles_matched}</td>
