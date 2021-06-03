@@ -66,10 +66,9 @@ nav ul li a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
     border: 1px solid white;
     font-family: 'Righteous', cursive;
-    font-size: 200%;
+    font-size: 150%;
     text-decoration: none;
     background-color: #F8E924;
     color: #2da7d9;
@@ -177,7 +176,7 @@ nav ul li a {
 
 .game-body {
     width: 100%;
-    min-height: 50vw;
+    min-height: 45vw;
     margin: 0 auto;
     text-align: center;
     padding: 0;
@@ -189,7 +188,7 @@ nav ul li a {
 }
 
 .game-board {
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #F8E924;
     margin: 0 auto;
     padding: 0;
@@ -544,7 +543,7 @@ nav ul li a {
 /***********Scoreboard Page*/
 
 .table {
-    background-color: #ff68a8;
+    background-color: #ff9bc5;
     color: white;
     width: 100%;
     min-height: 50vw;
@@ -553,8 +552,10 @@ nav ul li a {
     font-size: 150%;
 }
 
-.table td {
+.table thead tr {
     margin: 0 auto;
+    background-color: #ff68a8;
+    
 }
 
 
@@ -562,24 +563,46 @@ nav ul li a {
 
 .contactus-pg {
     text-align: center;
-    min-height: 80vh;
-    width: 80%;
+    width: 100%;
+    min-height: 45vw;
+    height: 100%;
+    background-color: #ff68a8;
+    background-size: cover;
+    overflow: hidden;
+}
 
+.contactus-pg h3 {
+    padding: 15px;
+    font-size: 200%;
 }
 
 .welcome-message {
     border: 1px solid black;
+    background-color: #2da7d9;
 }
 
 .welcome-message p {
     margin: 0 auto;
     font-size: 150%;
     font-weight: 600;
+    color: #F8E924;
 }
 
 .contact-form {
     text-align: left;
     width: 80%;
+}
+
+.contact-form form .form-group input {
+    text-align: left;
+    width: 80%;
+    background-color: #F8E924;
+}
+
+.contact-form form textarea {
+    text-align: left;
+    width: 100%;
+    background-color: #F8E924;
 }
 
 .contact-form label {
