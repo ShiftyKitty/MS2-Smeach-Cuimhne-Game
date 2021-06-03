@@ -33,6 +33,11 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+/***********Header*/
 header {
     background-color: #2da7d9;
     min-height: 15%;
@@ -44,6 +49,8 @@ nav ul li a {
     color: white;
     font-weight: 300;
     border: solid 1px #F8E924;
+    text-decoration: none;
+
 }
 
 .nav-game-button {
@@ -54,7 +61,80 @@ nav ul li a {
     border: 1px solid white;
     font-family: 'Righteous', cursive;
     font-size: 200%;
+    text-decoration: none;
 }
+
+.nav-game-button a {
+    text-decoration: none;
+}
+
+.nav-game-button a:hover {
+    text-decoration: none;
+}
+
+/***********Index Page*/
+
+.index-body {
+    width: 100%;
+    min-height: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+.index-play-game {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 50%;
+    height: 7%;
+}
+
+.index-play-game h4 {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-play-game a {
+    text-decoration: none;
+}
+
+.index-play-game a:hover {
+    text-decoration: none;
+}
+
+.index-scoreboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 50%;
+    height: 7%;
+}
+
+.index-scoreboard h4 {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-scoreboard a {
+    text-decoration: none;
+}
+
+.index-scoreboard a:hover {
+    text-decoration: none;
+}
+
+/***********Game Page*/
 
 .game-body {
     width: 100%;
