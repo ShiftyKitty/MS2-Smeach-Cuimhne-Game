@@ -260,10 +260,12 @@ nav ul li a {
     border: solid 2px white;
 }
 
+
 .tile .tile-front {
     transform: rotateY(-360deg);
 }
 
+/*
 .tile-back {
     width: 5em;
     height: 5em;
@@ -273,7 +275,7 @@ nav ul li a {
     color: #ff68a8;
     position: absolute;
 }
-
+*/
 .outer-ring .tile:nth-child(1) {
     transform: rotate(0deg) translate(19em);
 }
@@ -375,7 +377,6 @@ nav ul li a {
     transform: rotate(324deg) translate(12em);
 }
 
-
 .inner-ring .tile:nth-child(1) {
     transform: rotate(0deg) translate(5em);
 }
@@ -396,6 +397,172 @@ nav ul li a {
     transform: rotate(288deg) translate(5em);
 }
 
+/***********Scoreboard Page*/
+
+
+
+
+/***********Contact Us Page*/
+
+.contactus-pg {
+    text-align: center;
+    min-height: 80vh;
+    width: 80%;
+
+}
+
+.welcome-message {
+    border: 1px solid black;
+}
+
+.welcome-message p {
+    margin: 0 auto;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.contact-form {
+    text-align: left;
+    width: 80%;
+}
+
+.contact-form label {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+.contact-form input.btn {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    width: 25%;
+    background-color: #2da7d9;
+    color: #F8E924;
+}
+
+/***********Icon Correction*/
+
+.icon1 i {
+    transform: rotate(0deg);
+}
+
+.icon2 i {
+    transform: rotate(-24deg);
+}
+
+.icon3 i {
+    transform: rotate(-48deg);
+}
+
+.icon4 i {
+    transform: rotate(-72deg);
+}
+
+.icon5 i {
+    transform: rotate(-96deg);
+}
+
+.icon6 i {
+    transform: rotate(-120deg);
+}
+
+.icon7 i {
+    transform: rotate(-144deg);
+}
+
+.icon8 i {
+    transform: rotate(-168deg);
+}
+
+.icon9 i {
+    transform: rotate(-192deg);
+}
+
+.icon10 {
+    transform: rotate(-216deg);
+}
+
+.icon11 {
+    transform: rotate(-240deg);
+}
+
+.icon12 {
+    transform: rotate(-264deg);
+}
+
+.icon13 {
+    transform: rotate(-288deg);
+}
+
+.icon14 {
+    transform: rotate(-312deg);
+}
+
+.icon15 {
+    transform: rotate(-336deg);
+}
+
+
+.icon16 {
+    transform: rotate(0deg);
+}
+
+.icon17 {
+    transform: rotate(-36deg);
+}
+
+.icon18 {
+    transform: rotate(-72deg);
+}
+
+.icon19  {
+    transform: rotate(-108deg);
+}
+
+.icon20 {
+    transform: rotate(-144deg);
+}
+
+.icon21 {
+    transform: rotate(-180deg);
+}
+
+.icon22 {
+    transform: rotate(-216deg);
+}
+
+.icon23 {
+    transform: rotate(-252deg);
+}
+
+.icon24 {
+    transform: rotate(-288deg);
+}
+
+.icon25 {
+    transform: rotate(-324deg);
+}
+
+
+.icon26 {
+    transform: rotate(0deg);
+}
+
+.icon27 {
+    transform: rotate(-72deg) !important;
+}
+
+.icon28 {
+    transform: rotate(-144deg) !important;
+}
+
+.icon29 {
+    transform: rotate(-216deg) !important;
+}
+
+.icon30 {
+    transform: rotate(-288deg) !important;
+}
 
 
 /***********Mobile Size Game
