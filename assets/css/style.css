@@ -201,6 +201,7 @@ footer {
 }
 
 .game-board {
+    position: relative;
     min-height: 85vh;
     background-color: #F8E924;
     margin: 0 auto;
@@ -633,6 +634,7 @@ footer {
 .contact-form input.btn {
     text-align: center;
     font-family: "Raleway", sans-serif;
+    font-size: 100%;
     font-weight: 600;
     width: 30%;
     background-color: #2da7d9;
@@ -764,12 +766,12 @@ footer {
 }
 
 
-/***********Mobile Size Game
+/***********Mobile Size Game*/
 
 @media (max-width: 480px) {
     .timer { 
-        min-height: 4em;
-        width: 4em;
+        min-height: 5em;
+        width: 5em;
         background-color: white;
         border-radius: 50%;
         border: solid 1px black;
@@ -777,160 +779,173 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-family: 'Raleway', sans-serif;
+        color: #32CD32;
     }
-    
+
     .tile-back {
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: #ff68a8;
-        z-index: 101;
-        position: absolute;
+        width: 2.5em;
+        height: 2.5em;
     }
     
     .tile-front {
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: white;
-        z-index: 100;
-        position: absolute;
+        width: 2.5em;
+        height: 2.5em;
     }
-    
-    .tile-back:hover {
-        border: solid 2px white;
+
+    .tile-front i {
+        font-size: 1.25em;    
     }
-    
-    .tile-front:hover {
-        border: solid 2px white;
+
+    .timer p {
+        font-size: 250%; 
+    }
+
+    .timer i {
+        font-size: 250%; 
+    }
+
+    .score-tally h5 {
+        font-size: 100%;
     }
     
     .outer-ring .tile:nth-child(1) {
-        transform: rotate(0deg) translate(8em);
+        transform: rotate(0deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(2) {
-        transform: rotate(24deg) translate(8em);
+        transform: rotate(24deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(3) {
-        transform: rotate(48deg) translate(8em);
+        transform: rotate(48deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(4) {
-        transform: rotate(72deg) translate(8em);
+        transform: rotate(72deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(5) {
-        transform: rotate(96deg) translate(8em);
+        transform: rotate(96deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(6) {
-        transform: rotate(120deg) translate(8em);
+        transform: rotate(120deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(7) {
-        transform: rotate(144deg) translate(8em);
+        transform: rotate(144deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(8) {
-        transform: rotate(168deg) translate(8em);
+        transform: rotate(168deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(9) {
-        transform: rotate(192deg) translate(8em);
+        transform: rotate(192deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(10) {
-        transform: rotate(216deg) translate(8em);
+        transform: rotate(216deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(11) {
-        transform: rotate(240deg) translate(8em);
+        transform: rotate(240deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(12) {
-        transform: rotate(264deg) translate(8em);
+        transform: rotate(264deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(13) {
-        transform: rotate(288deg) translate(8em);
+        transform: rotate(288deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(14) {
-        transform: rotate(312deg) translate(8em);
+        transform: rotate(312deg) translate(8.5em);
     }
     
     .outer-ring .tile:nth-child(15) {
-        transform: rotate(336deg) translate(8em);
+        transform: rotate(336deg) translate(8.5em);
     }
     
     
     .middle-ring .tile:nth-child(1) {
-        transform: rotate(0deg) translate(5em);
+        transform: rotate(0deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(2) {
-        transform: rotate(36deg) translate(5em);
+        transform: rotate(36deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(3) {
-        transform: rotate(72deg) translate(5em);
+        transform: rotate(72deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(4) {
-        transform: rotate(108deg) translate(5em);
+        transform: rotate(108deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(5) {
-        transform: rotate(144deg) translate(5em);
+        transform: rotate(144deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(6) {
-        transform: rotate(180deg) translate(5em);
+        transform: rotate(180deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(7) {
-        transform: rotate(216deg) translate(5em);
+        transform: rotate(216deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(8) {
-        transform: rotate(252deg) translate(5em);
+        transform: rotate(252deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(9) {
-        transform: rotate(288deg) translate(5em);
+        transform: rotate(288deg) translate(5.5em);
     }
     
     .middle-ring .tile:nth-child(10) {
-        transform: rotate(324deg) translate(5em);
+        transform: rotate(324deg) translate(5.5em);
     }
     
     
     .inner-ring .tile:nth-child(1) {
-        transform: rotate(0deg) translate(2em);
+        transform: rotate(0deg) translate(2.5em);
     }
     
     .inner-ring .tile:nth-child(2) {
-        transform: rotate(72deg) translate(2em);
+        transform: rotate(72deg) translate(2.5em);
     }
     
     .inner-ring .tile:nth-child(3) {
-        transform: rotate(144deg) translate(2em);
+        transform: rotate(144deg) translate(2.5em);
     }
     
     .inner-ring .tile:nth-child(4) {
-        transform: rotate(216deg) translate(2em);
+        transform: rotate(216deg) translate(2.5em);
     }
     
     .inner-ring .tile:nth-child(5) {
-        transform: rotate(288deg) translate(2em);
+        transform: rotate(288deg) translate(2.5em);
+    }
+
+    .table {
+        font-size: 100%;
+    }
+    
+    .nav-game-button {
+        position: inherit;
+        padding: 0;
+        margin: 0;
+        transform: translate(0%, 0%);
+        font-size: 100%;
     }
     
 }
 
+/*
 @media (max-width: 576px) {
     .timer { 
         min-height: 6.5em;
@@ -1098,7 +1113,7 @@ footer {
 }
 */
 /***********Tablet Size Game*/
-/*
+
 @media (min-width: 768px) {
     .timer { 
         min-height: 9em;
@@ -1110,36 +1125,32 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-family: 'Raleway', sans-serif;
+        color: #32CD32;
     }
-    
+
     .tile-back {
         width: 4.5em;
         height: 4.5em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: #ff68a8;
-        z-index: 101;
-        position: absolute;
     }
     
     .tile-front {
         width: 4.5em;
         height: 4.5em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: white;
-        z-index: 100;
-        position: absolute;
     }
-    
-    .tile-back:hover {
-        border: solid 2px white;
+
+    .tile-front i {
+        font-size: 2.25em;    
     }
-    
-    .tile-front:hover {
-        border: solid 2px white;
+
+    .timer p {
+        font-size: 450%; 
     }
-    
+
+    .timer i {
+        font-size: 450%; 
+    }
+
     .outer-ring .tile:nth-child(1) {
         transform: rotate(0deg) translate(16.5em);
     }
@@ -1261,11 +1272,51 @@ footer {
     .inner-ring .tile:nth-child(5) {
         transform: rotate(288deg) translate(4.5em);
     }
+
+    
 }
-*/
+
+@media (max-width: 990px) {
+    .nav-game-button {
+        position: inherit;
+        padding: 0;
+        margin: 0;
+        transform: translate(0%, 0%);
+        font-size: 100%;
+    }
+}
+
 /***********Laptop Size Game*/
-/*
+
 @media (min-width: 1025px) {
+
+    .outer-ring {
+        border-radius: 50%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        perspective: 1000px;
+    }
+    
+    .middle-ring {
+        border-radius: 50%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        perspective: 1000px;
+    }
+    
+    .inner-ring {
+        border-radius: 50%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        perspective: 1000px;
+    }
+    
     .timer { 
         min-height: 7em;
         width: 7em;
@@ -1273,39 +1324,36 @@ footer {
         border-radius: 50%;
         border: solid 1px black;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-family: 'Raleway', sans-serif;
+        color: #32CD32;
+    }
+
+    .timer p {
+        font-size: 300%; 
+    }
+
+    .timer i {
+        font-size: 300%; 
     }
     
     .tile-back {
         width: 3.5em;
         height: 3.5em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: #ff68a8;
-        z-index: 101;
-        position: absolute;
     }
     
     .tile-front {
         width: 3.5em;
         height: 3.5em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: white;
-        z-index: 100;
-        position: absolute;
     }
-    
-    .tile-back:hover {
-        border: solid 2px white;
+
+    .tile-front i {
+        font-size: 1.75em;    
     }
-    
-    .tile-front:hover {
-        border: solid 2px white;
-    }
-    
+
+
     .outer-ring .tile:nth-child(1) {
         transform: rotate(0deg) translate(12.5em);
     }
@@ -1428,10 +1476,11 @@ footer {
         transform: rotate(288deg) translate(3.5em);
     }
 }
-*/
+
+
 /***********Desktop Size Game*/
 
-/*
+
 @media (min-width: 1440px) {
     .timer { 
         min-height: 10em;
@@ -1443,39 +1492,137 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    
-    .tile-back {
-        width: 5em;
-        height: 5em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: #ff68a8;
-    }
-    
-    .tile-front {
-        width: 5em;
-        height: 5em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: white;
-        z-index: 101;
-    }
+        font-family: 'Raleway', sans-serif;
+        color: #32CD32;
+}
 
-    .tile .tile-front i {
-        height: 90%;
-        width: 90%;
-        color: black;
-        margin: 0 auto;
-    }
-    
-    .tile:hover .tile-back {
-        transform: rotateY(-180deg);
-    }
-    
-    .tile:hover .tile-front {
-        transform: rotateY(0);
-    }
+.timer p {
+    font-size: 500%; 
+    color: #32CD32;   
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    display: block;
+}
+
+.timer i {
+    font-size: 500%; 
+    color: #32CD32;   
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    display: block;
+}
+
+.timer-icon-style { 
+    color: #32CD32; 
+    font-size: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.outer-ring {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+
+}
+
+
+.middle-ring {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.inner-ring {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+
+.tile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform: scale(1);
+    transform-style: preserve-3d;
+}
+
+.tile.done {
+    cursor: default;
+}
+
+.tile.done:hover {
+    cursor: default;
+    box-shadow: none;
+}
+
+.null {
+    pointer-events: none;
+}
+
+.tile-front {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-color: white;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.tile-front i {
+    font-size: 2.5em;    
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    width: 1.1em;
+    height: 1.1em;
+    display: block;
+}
+
+.tile-front,.tile-back:hover {
+    border: solid 2px white;
+}
+
+
+.tile .tile-front {
+    transform: rotateY(-360deg);
+}
+
+.tile-back {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-color: #ff68a8;
+    color: #ff68a8;
+    position: absolute;
+}
     
     
     .outer-ring .tile:nth-child(1) {
