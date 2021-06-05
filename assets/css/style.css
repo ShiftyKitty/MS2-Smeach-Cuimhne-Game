@@ -821,7 +821,7 @@ footer {
 
     .score-tally {
         font-size: 90%;
-        bottom: 0;
+        bottom: -10%;
     }
 
     .reset-button h5 {
@@ -831,7 +831,7 @@ footer {
 
     .reset-button {
         font-size: 90%;
-        bottom: 0;
+        bottom: -7%;
     }
 
     
@@ -962,19 +962,27 @@ footer {
     }
 
     .index-play-game {
+        position: absolute;
         width: 80%;
     }
 
     .index-play-game h4{
+        position: relative;
         font-size: 100%;
+        transform: translate(-50%, -50%);
+
     }
 
     .index-scoreboard {
+        position: absolute;
         width: 80%;
+
     }
 
     .index-scoreboard h4 {
+        position: relative;
         font-size: 100%;
+        transform: translate(-50%, -50%);
     }
 
     .contact-form input.btn {
