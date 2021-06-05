@@ -39,7 +39,7 @@ My target audience is the general consumer. Someone who is bored and looking for
 
 For consumers: <br>
 When you go to a particular site, where do you go first? <br>
-Users are brought to a screen where they have option to play the game straight away. I do not want to create a login format (at this stage) that can potentially hamper this process. My goal is to have a game where a user can click “Play Game” and be brought through straight away. Once “Play Game” has been clicked, they will be brought to the board. Here they will have option to toggle on/off switching functionality, to manage difficulty.
+Users are brought to a screen where they have option to play the game straight away. I do not want to create a login format (at this stage) that can potentially hamper this process. My goal is to have a game where a user can click “Play Game” and be brought through straight away. Once “Play Game” has been clicked, they will be brought to the board.
 
 And why do you go there in particular? <br>
 To play the game.
@@ -63,9 +63,9 @@ Opportunity/Problem | Important | Feasability/Viability
 Pattern matching game with 30 tiles on board | 5 | 5 |
 Pattern switch when false pattern made. How to highlight pattern switch | 5	| 4
 Scoreboard that logs all users scores to database | 3 | 3
-User login to allow easier score logs and commercially for marketing opportunities | 2 | 5
-Toggle on/off switch set up to decrease difficulty | 2 | 5
-Score flash at end of users playthrough that gets auto sent to user email | 2 |4
+User login to allow easier score logs and commercially for marketing opportunities | 1 | 4
+Toggle on/off switch set up to decrease difficulty | 1 | 4
+Score flash at end of users playthrough that gets logged to scoreboard | 4 |5
 Refresh button to reset game | 4 | 5
 Timer counting up from moment game starts | 5 | 5
 Addition of bogey card that automatically ends game when selected | 1 | 4
@@ -180,7 +180,7 @@ I want all areas of this website/project to be accessible regardless of the sect
 Principles of Organization:
 - For this project, the main focal point/crowning jewel is the game that is going to be played. Everything else from homepage to scoreboard are secondary features. 
 - My reasoning behind adding a homepage is to give user a hub area as such. In addition, when I was initially drafting this game I was planning on adding Easy, Medium and Hard difficulties to the game. This is something that I will not do on this iteration but may be something I want to introduce in future versions of game. 
-- Also want to add different game varietys. There is a tiny element of this in the inclusion of the toggle on/off switch for the tile switch functionality, but my initial drafts of this game/s had many variations so would like to add these in future which will be accessible from the homepage. 
+- Also want to add different game varieties. There is a tiny element of this in the inclusion of the toggle on/off switch for the tile switch functionality, but my initial drafts of this game/s had many variations so would like to add these in future which will be accessible from the homepage. 
 
 Therefore organisational flow of site will be
 Homepage/Hubpage <-> Smeach Cuimhne Game <-> Scoreboard <-> Contact Us
@@ -197,14 +197,19 @@ Insert Wireframes
 ### The Surface plane:
 Font: For the fonts I wanted something playful yet slightly serious. Therefore, I have selected Righteous as primary/heading font with Raleway as secondary/general text font. 
 
-Color: The main site colour will be Curious Blue (45, 167, 217) with some lighter variations of this throughout. Also will be using a Mauve type colour (255, 85, 207) to represent the colour of the tiles. 
+Color: The colours chosen for Project Smeach Cuimhne were carefully selected. According to research done by the University of Florida in the 2015 paper [The Effect of Color on Working Memory Performance](https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1619&context=honorstheses1990-2015), the use of blue heightens user memory, creativity and calmness. In addition, pink apparently is associated with fun while yellow brings with it attentiveness. Therefore the main site colour will be Curious Blue (45, 167, 217) with some lighter variations of this throughout. 
+Also will be using a Miami Pink type colour (255, 104, 168) to represent the colour of the tiles. Dandelion yellow (248, 233, 36) will be the other color used throughout site.
 
 Any images used throughout the site will be obtained from image sharing sites and referenced appropriately in the Media section in Credits of this README doc. 
 
 Design for tiles will most likely be obtained from FontAwesome. 
 
 ## Features:
-Project Smeach Cuimhne will boast the following features:
+<hr>
+11/05/2021
+
+As of 11/05/2021, Project Smeach Cuimhne will boast the following features which may be subject to change:
+
 - Navigation Bar: Featured on all pages of site, nav bar will give user full access to all available pages of the site. The Nav bar will consist of Branding/HomePage link, Play Game button that brings user to the game page, Scoreboard tab that will bring user to community scoreboard and Contact Us page for user to contact if experience any issue with the game.
 
 - Home Page:
@@ -221,13 +226,13 @@ Here we have the main page of the project. Where the user can play the game.
 
             - Once user presses Play, all tiles on board will flip up and 5 sec countdown timer will appear where the play button was. 
 
-            - After 5 sec countdown is finished, all tiles are covered and the game has started. 
+            - After 3 sec countdown is finished, all tiles are covered and the game has started. 
 
             - The centre of the board is now a timer. The users task is to now match the correct tiles together. 
 
-            - When a user selects the correct, matching pair the pair will turn/glow green and removed from the board. 
+            - When a user selects the correct, matching pair the pair will appear face up. 
 
-            - When user selects incorrect matching pair, the incorrectly selected matching pair will turn/glow red and the tiles will change places. 
+            - When user selects incorrect matching pair, tiles will swap places
 
             - This incorrect selection will also add to a tally underneath the board. 
 
@@ -239,25 +244,112 @@ Here we have the main page of the project. Where the user can play the game.
 
             - User score is determined based on the amount of incorrect patterns made and the time taken to complete the game. 
 
-            - Each incorrect pair adds +5 secs to the overall time. 
-
             - Best player is deemed as person with lowest overall score. 
 
     - Incorrect Scores: Board shown below the game that tallys up the amount of incorrect patterns user has made in game. 
     - Reset Button: Button that allows user to reset the game at any time. 
-    - Turn off switch: Allows user to turn off switch functionality when incorrect pattern made to allow for easier gameplay
+    - Turn off switch: ~~Allows user to turn off switch functionality when incorrect pattern made to allow for easier gameplay~~
+    02/06/2021
+    Have decided against adding Turn Off Switch. In future iterations of game I will introduce an Easy mode that will be a basic tile matching game. 
+
 
 - Scoreboard:
-Table presented with Position, Username, Time Completed, Incorrect Patterns Made and Overall Score presented across the top. 
+Table presented with Username, Time Completed, Incorrect Patterns Made and Overall Score presented across the top. 
 Once user has completed the game,  Username, Time Completed, Incorrect Patterns Made and Overall Score are logged here. These criteria in turn will determine the user rank. 
 
 - Contact Us: 
 Presents user option to be able to contact host with any queries or issues that may arise when playing game. 
 Form here requesting Name, Email Address and user query/message. Also toggle button here that asks to be toggled if user is interested in hearing about future game developments. Also Send button to send message. 
+03/06/2021 - Additional feature added that when user successfully submits message, a Thank you message appears for user saying someone will be in touch shortly.
+
+
+
+05/06/2021 <br>
+### Features Implemented in Final project:
+
+Following features have been implemented in final game:
+
+- Header on every page that clearly allows user to navigate through site on all devices. 
+
+- Index page that offers user choice to go to Game or to Scoreboard.
+
+- Play Game page: 
+
+            User is immediately presented with a board of 30 pink circles/tiles and a triangle play button in the centre of these circles.
+
+            - Once user presses Play, all tiles on board will flip up and 3 sec countdown timer will appear where the play button was. 
+
+            - After 3 sec countdown is finished, all tiles are covered and the game has started. 
+
+            - The centre of the board is now a timer. The users task is to now match the correct tiles together. 
+
+            - When a user selects the correct, matching pair the pair will appear face up. 
+
+            - When user selects incorrect matching pair, tiles will briefly appear face up and swap places. 
+
+            - This incorrect selection will also add to a tally underneath the board. 
+
+            - Once user has cleared entire board, game is finished and user is presented with an Congratulations messsage showing their score and an option/text area to input username. 
+
+            - After inputting username and selecting enter, their score is then logged to the scoreboard on the Scoreboard page. A subsequent message will inform the user to check scoreboard to see their position. 
+
+            - Once out of alert, triangle play button is presented again in centre of board with a new game ready to be played again. 
+
+            - User score is determined based on the amount of incorrect patterns made and the time taken to complete the game. 
+
+            - Best player is deemed as person with lowest overall score. 
+
+    - Incorrect Scores: Board shown below the game that tallys up the amount of incorrect patterns user has made in game. 
+
+    - Reset Button: Button that allows user to reset the game at any time. 
+
+- Scoreboard:
+Table presented with Username, Time Completed, Incorrect Matches Made and Overall Score presented across the top. 
+Once user has completed the game,  Username, Time Completed, Incorrect Patterns Made and Overall Score are logged here. These criteria in turn will determine the user rank. 
+
+    -  Unfortunately due to tech at disposal, can only create scoreboard using users local storage. However future iterations of game will have wider community so other users scores can be seen on scoreboard.
+
+- Contact Us: 
+Presents user option to be able to contact host with any queries or issues that may arise when playing game. 
+Form here requesting Name, Email Address and user query/message. Also toggle button here that asks to be toggled if user is interested in hearing about future game developments. Also Send button to send message. 
+Additional feature added that when user successfully submits message, a Thank you message appears for user saying someone will be in touch shortly.
+
+### Future Features to be implemented after MS2:
+
+- Future releases will include different game modes that will be accessible from index page.
+
+- Future iterations of game will offer clearer way to show this switch as well as variation of game that does not include this switch. 
+
+- Future game developments will include numeric postioning next to user name on Scoreboard. 
+
+- Future variations of game may include clock/time freeze upon combo chain of correct tiles matched. 
+
+- Future iterations of game will have wider community so other users scores can be seen on scoreboard.
+
+
+
+###
 
 ## Technologies Used 
+<hr>
+11/05/2021
+This project will be primarily made up of the following technologies:
+
+HTML: To create structure of site
+
+CSS: To add styling and substance to project
+
+JavaScript: To bring user interativity to project. 
+
+Bootstrap: At this early stage will be used mainly for the burger toggle menu on smaller devices but possibly also on Scoreboard page for tables and Contact Page for input features. 
+
+05/06/2021
+In addition to the outlined technologies at start of project, the following was also used.
+
+[jQuery](https://jquery.com/) - A javascript library, used in conjunction with JavaScript to help deliver on set out features and goals when it comes to adding interactivity to the site. 
 
 ## Testing
+<hr>
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
