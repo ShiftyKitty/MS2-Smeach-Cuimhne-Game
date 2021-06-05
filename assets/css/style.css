@@ -820,6 +820,7 @@ footer {
     }
 
     .score-tally {
+        position: relative;
         font-size: 90%;
         bottom: -10%;
     }
@@ -831,7 +832,7 @@ footer {
 
     .reset-button {
         font-size: 90%;
-        bottom: -7%;
+        bottom: -22%;
     }
 
     
@@ -958,7 +959,7 @@ footer {
     }
 
     .table {
-        font-size: 80%;
+        font-size: 75%;
     }
 
     .index-play-game {
@@ -966,7 +967,7 @@ footer {
         width: 80%;
     }
 
-    .index-play-game h4{
+    .index-play-game h4 {
         position: relative;
         font-size: 100%;
         transform: translate(-50%, -50%);
