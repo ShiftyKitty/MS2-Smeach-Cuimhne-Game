@@ -192,7 +192,7 @@ $(document).ready(function(){
         }
     }
     }
-    
+    //save users score to local storage
     function save() {
     let username = document.querySelector("#input").value;
     let timeCompleted = document.querySelector("#final-time").innerHTML;
@@ -200,6 +200,10 @@ $(document).ready(function(){
     let overallScore = document.querySelector("#final-overall-score").innerHTML;
     
     let new_data = {"username":username, "time_completed":timeCompleted, "incorrect_tiles_matched":totalIncorrects, "overall_score":overallScore};
+    
+    $(document).ready(function() {
+        $(".saveButton").addClass("null");
+    });
     
     // if nothing saved at start then save empty array
     if(localStorage.getItem("data") == null){
@@ -212,4 +216,3 @@ $(document).ready(function(){
     
     localStorage.setItem("data", JSON.stringify(old_data));
     }
-    

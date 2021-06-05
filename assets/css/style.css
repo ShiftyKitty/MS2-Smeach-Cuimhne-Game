@@ -368,6 +368,7 @@ footer {
     position: absolute;
     padding: 0;
     margin: 0 auto;
+    
 }
 
 .tile-front i {
@@ -402,6 +403,7 @@ footer {
     color: #ff68a8;
     position: absolute;
 }
+
 
 .outer-ring .tile:nth-child(1) {
     transform: rotate(0deg) translate(19em);
@@ -643,127 +645,129 @@ footer {
 
 /***********Icon Correction*/
 
-.icon1 i {
+
+.outer-ring .tile:nth-child(1) div {
     transform: rotate(0deg);
 }
 
-.icon2 i {
+.outer-ring .tile:nth-child(2) div {
     transform: rotate(-24deg);
 }
 
-.icon3 i {
+.outer-ring .tile:nth-child(3) div {
     transform: rotate(-48deg);
 }
 
-.icon4 i {
+.outer-ring .tile:nth-child(4) div {
     transform: rotate(-72deg);
 }
 
-.icon5 i {
+.outer-ring .tile:nth-child(5) div {
     transform: rotate(-96deg);
 }
 
-.icon6 i {
+.outer-ring .tile:nth-child(6) div {
     transform: rotate(-120deg);
 }
 
-.icon7 i {
+.outer-ring .tile:nth-child(7) div {
     transform: rotate(-144deg);
 }
 
-.icon8 i {
-    transform: rotate(-168deg);
+.outer-ring .tile:nth-child(8) div {
+    transform: rotate(-168deg) ;
 }
 
-.icon9 i {
+.outer-ring .tile:nth-child(9) div {
     transform: rotate(-192deg);
 }
 
-.icon10 {
+.outer-ring .tile:nth-child(10) div {
     transform: rotate(-216deg);
 }
 
-.icon11 {
+.outer-ring .tile:nth-child(11) div {
     transform: rotate(-240deg);
 }
 
-.icon12 {
+.outer-ring .tile:nth-child(12) div {
     transform: rotate(-264deg);
 }
 
-.icon13 {
+.outer-ring .tile:nth-child(13) div {
     transform: rotate(-288deg);
 }
 
-.icon14 {
+.outer-ring .tile:nth-child(14) div {
     transform: rotate(-312deg);
 }
 
-.icon15 {
+.outer-ring .tile:nth-child(15) div {
     transform: rotate(-336deg);
 }
 
 
-.icon16 {
+.middle-ring .tile:nth-child(1) div {
     transform: rotate(0deg);
 }
 
-.icon17 {
+.middle-ring .tile:nth-child(2) div {
     transform: rotate(-36deg);
 }
 
-.icon18 {
+.middle-ring .tile:nth-child(3) div {
     transform: rotate(-72deg);
 }
 
-.icon19  {
+.middle-ring .tile:nth-child(4) div {
     transform: rotate(-108deg);
 }
 
-.icon20 {
+.middle-ring .tile:nth-child(5) div {
     transform: rotate(-144deg);
 }
 
-.icon21 {
+.middle-ring .tile:nth-child(6) div {
     transform: rotate(-180deg);
 }
 
-.icon22 {
+.middle-ring .tile:nth-child(7) div {
     transform: rotate(-216deg);
 }
 
-.icon23 {
+.middle-ring .tile:nth-child(8) div {
     transform: rotate(-252deg);
 }
 
-.icon24 {
+.middle-ring .tile:nth-child(9) div {
     transform: rotate(-288deg);
 }
 
-.icon25 {
-    transform: rotate(-324deg);
+.middle-ring .tile:nth-child(10) div {
+    transform: rotate(-324deg) ;
 }
 
 
-.icon26 {
+.inner-ring .tile:nth-child(1) div {
     transform: rotate(0deg);
 }
 
-.icon27 {
-    transform: rotate(-72deg) !important;
+.inner-ring .tile:nth-child(2) div {
+    transform: rotate(-72deg);
 }
 
-.icon28 {
-    transform: rotate(-144deg) !important;
+.inner-ring .tile:nth-child(3) div {
+    transform: rotate(-144deg);
 }
 
-.icon29 {
-    transform: rotate(-216deg) !important;
+.inner-ring .tile:nth-child(4) div {
+    transform: rotate(-216deg);
 }
 
-.icon30 {
-    transform: rotate(-288deg) !important;
+.inner-ring .tile:nth-child(5) div {
+    transform: rotate(-288deg);
 }
+
 
 
 /***********Mobile Size Game*/
@@ -1623,7 +1627,7 @@ footer {
     color: #ff68a8;
     position: absolute;
 }
-    
+
     
     .outer-ring .tile:nth-child(1) {
         transform: rotate(0deg) translate(19em);
