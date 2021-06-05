@@ -822,7 +822,6 @@ footer {
     .score-tally {
         position: relative;
         font-size: 90%;
-        bottom: -10%;
     }
 
     .reset-button h5 {
@@ -971,7 +970,8 @@ footer {
         position: relative;
         font-size: 100%;
         transform: translate(-50%, -50%);
-
+        top: 50%;
+        left: 50%;
     }
 
     .index-scoreboard {
@@ -984,6 +984,8 @@ footer {
         position: relative;
         font-size: 100%;
         transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
     }
 
     .contact-form input.btn {
