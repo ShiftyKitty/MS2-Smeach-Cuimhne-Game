@@ -137,6 +137,7 @@ footer {
 }
 
 .index-play-game h4 {
+
     position: relative;
     margin: 0 auto;
     top: 50%;
@@ -772,19 +773,221 @@ footer {
 
 /***********Mobile Size Game*/
 
-@media (max-width: 480px) {
+@media (max-width: 350px) {
+
+    .outer-ring {
+        top: 40%;
+    }
+    
+    .middle-ring {
+        top: 40%;
+    }
+    
+    .inner-ring {
+        top: 40%;
+    }
+
+    .timer { 
+        min-height: 4.2em;
+        width: 4.2em;
+        top: 40%;
+    }
+
+    .tile-back {
+        width: 2.1em;
+        height: 2.1em;
+    }
+    
+    .tile-front {
+        width: 2.1em;
+        height: 2.1em;
+    }
+
+    .tile-front i {
+        font-size: 1.05em;    
+    }
+
+    .timer p {
+        font-size: 210%; 
+    }
+
+    .timer i {
+        font-size: 210%; 
+    }
+
+    .score-tally h5 {
+        font-size: 80%;
+    }
+
+    .score-tally {
+        font-size: 90%;
+        bottom: 0;
+    }
+
+    .reset-button h5 {
+        font-size: 90%;
+
+    }
+
+    .reset-button {
+        font-size: 90%;
+        bottom: 0;
+    }
+
+    
+    .outer-ring .tile:nth-child(1) {
+        transform: rotate(0deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(2) {
+        transform: rotate(24deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(3) {
+        transform: rotate(48deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(4) {
+        transform: rotate(72deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(5) {
+        transform: rotate(96deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(6) {
+        transform: rotate(120deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(7) {
+        transform: rotate(144deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(8) {
+        transform: rotate(168deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(9) {
+        transform: rotate(192deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(10) {
+        transform: rotate(216deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(11) {
+        transform: rotate(240deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(12) {
+        transform: rotate(264deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(13) {
+        transform: rotate(288deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(14) {
+        transform: rotate(312deg) translate(7.6em);
+    }
+    
+    .outer-ring .tile:nth-child(15) {
+        transform: rotate(336deg) translate(7.6em);
+    }
+    
+    
+    .middle-ring .tile:nth-child(1) {
+        transform: rotate(0deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(2) {
+        transform: rotate(36deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(3) {
+        transform: rotate(72deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(4) {
+        transform: rotate(108deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(5) {
+        transform: rotate(144deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(6) {
+        transform: rotate(180deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(7) {
+        transform: rotate(216deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(8) {
+        transform: rotate(252deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(9) {
+        transform: rotate(288deg) translate(4.6em);
+    }
+    
+    .middle-ring .tile:nth-child(10) {
+        transform: rotate(324deg) translate(4.6em);
+    }
+    
+    
+    .inner-ring .tile:nth-child(1) {
+        transform: rotate(0deg) translate(2.1em);
+    }
+    
+    .inner-ring .tile:nth-child(2) {
+        transform: rotate(72deg) translate(2.1em);
+    }
+    
+    .inner-ring .tile:nth-child(3) {
+        transform: rotate(144deg) translate(2.1em);
+    }
+    
+    .inner-ring .tile:nth-child(4) {
+        transform: rotate(216deg) translate(2.1em);
+    }
+    
+    .inner-ring .tile:nth-child(5) {
+        transform: rotate(288deg) translate(2.1em);
+    }
+
+    .table {
+        font-size: 80%;
+    }
+
+    .index-play-game {
+        width: 80%;
+    }
+
+    .index-play-game h4{
+        font-size: 100%;
+    }
+
+    .index-scoreboard {
+        width: 80%;
+    }
+
+    .index-scoreboard h4 {
+        font-size: 100%;
+    }
+
+    .contact-form input.btn {
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width: 480px) and (min-width: 350px) {
     .timer { 
         min-height: 5em;
         width: 5em;
-        background-color: white;
-        border-radius: 50%;
-        border: solid 1px black;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Raleway', sans-serif;
-        color: #32CD32;
     }
 
     .tile-back {
@@ -935,6 +1138,14 @@ footer {
         transform: rotate(288deg) translate(2.5em);
     }
 
+    .index-play-game {
+        width: 80%;
+    }
+
+    .index-scoreboard {
+        width: 80%; 
+    }
+
     .table {
         font-size: 100%;
     }
@@ -949,48 +1160,45 @@ footer {
     
 }
 
-/*
-@media (max-width: 576px) {
+
+@media (max-width: 600px) and (min-width: 500px) {
     .timer { 
         min-height: 6.5em;
         width: 6.5em;
-        background-color: white;
-        border-radius: 50%;
-        border: solid 1px black;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
     
     .tile-back {
         width: 3.25em;
         height: 3.25em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: #ff68a8;
-        z-index: 101;
-        position: absolute;
     }
     
     .tile-front {
         width: 3.25em;
         height: 3.25em;
-        border-radius: 50%;
-        border: solid 1px black;
-        background-color: white;
-        z-index: 100;
-        position: absolute;
     }
-    
 
-
-    .tile-back:hover {
-        border: solid 2px white;
+    .tile-front i {
+        font-size: 1.625em;    
     }
-    
-    .tile-front:hover {
-        border: solid 2px white;
+
+    .timer p {
+        font-size: 325%; 
+    }
+
+    .timer i {
+        font-size: 325%; 
+    }
+
+    .score-tally  {
+        bottom: 2%;
+    }
+
+    .reset-button  {
+        bottom: 2%;
+    }
+
+    .score-tally h5 {
+        font-size: 100%;
     }
     
     .outer-ring .tile:nth-child(1) {
@@ -1115,7 +1323,7 @@ footer {
     }
     
 }
-*/
+
 /***********Tablet Size Game*/
 
 @media (min-width: 768px) {
@@ -1522,13 +1730,6 @@ footer {
     position: absolute;
     text-align: center;
     display: block;
-}
-
-.timer-icon-style { 
-    color: #32CD32; 
-    font-size: 100%;
-    padding: 0;
-    margin: 0 auto;
 }
 
 .outer-ring {
