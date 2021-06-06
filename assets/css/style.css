@@ -247,6 +247,35 @@ footer {
     color:black;
 }
 
+.back-to-game {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    width: 65%;
+    height: 100%;
+    background-color: #F8E924;
+    font-family: 'Raleway', sans-serif;
+    color: #2da7d9;
+    padding: 5.5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.back-to-game a {
+    font-family: 'Raleway', sans-serif;
+    color: #2da7d9;
+    height: 100%;
+    padding: 10px 10%;
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 550;
+}
+
+.back-to-game a:hover {
+    text-decoration: none;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;
@@ -561,6 +590,9 @@ footer {
     bottom: 10%;
     right: 5%;
     border-radius: 10px;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: #F8E924;
 }
 
 
