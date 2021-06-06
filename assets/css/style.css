@@ -269,7 +269,7 @@ footer {
     padding: 10px 10%;
     text-decoration: none;
     font-size: 110%;
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .back-to-game a:hover {
@@ -1539,6 +1539,8 @@ footer {
     
 }
 
+/*********Toggler Tab Fix*/
+
 @media (max-width: 990px) {
     .nav-game-button {
         position: inherit;
@@ -1839,12 +1841,7 @@ footer {
 .tile-front {
     width: 5em;
     height: 5em;
-    border-radius: 50%;
-    border: solid 1px black;
-    background-color: white;
-    position: absolute;
-    padding: 0;
-    margin: 0 auto;
+   
 }
 
 .tile-front i {
@@ -2004,5 +2001,3 @@ footer {
     }
 }
 
-
-/***********In Game Scoreboard*/
