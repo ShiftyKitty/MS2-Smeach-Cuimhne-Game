@@ -84,34 +84,18 @@ $(document).ready(function(){
             // Get rid of done class on divs that have been correctly matched prior to game start
             $(".timer").click(function() { setTimeout (() => {
                 let allTiles = $(this).siblings().children();
-                    allTiles.children().addClass("tile-back");
+                    allTiles.children("div").addClass("tile-back");
                     allTiles.children().removeClass(" done");
                 }, 4000);
             });
             
             // To reset timer and all tile pieces when clicked
             $(".reset-button").click(function(){
-                //Targets the timer
-                let timer = $(this).siblings(".game-board").children(".timer");
-                // Adds timer class back to play icon
-                // Removes null class to allow timer to be clicked again
-                let resetTimer = timer.addClass("timer").addClass("timer-icon-style").removeClass("null");
-                // Add play icon back to timer 
-                    resetTimer = document.querySelector(".timer").innerHTML = `<i class="fas fa-play"></i>`;
-
-                // Clears timer of all innerHtml
-                $(this).siblings(".game-board").children(".timer").children().innerHTML = ` `;
-                
-                // Recovers all tile pieces again
-                $(this).siblings(".game-board").children().children().children().addClass("tile-back");
-                
-                // Brings incorrect score tally back to 0
-                let tilesWrong = document.querySelector(".incorrect-score").innerHTML;
-                tilesWrong = 0;
-                document.querySelector(".incorrect-score").innerHTML = tilesWrong;
-    
+                window.setTimeout(() => {
+                    window.location.reload(true);
+                }, 200);
+                });
             });
-        });
     
     
     let selectedTile = null;
@@ -212,11 +196,6 @@ $(document).ready(function(){
                 congratsMessage.classList.add("active");
                 overlay.classList.add("active");
                 
-
-                finalIncorrectScore;
-                finalTime;
-                overallScore;
-                
                 // To fix bug that caused div of class score-tally to be covered with class tile-back
                 $(document).ready(function() {
                     $(".timer").siblings().children().children().removeClass("tile-back");
@@ -242,8 +221,10 @@ $(document).ready(function(){
     
     // to prevent user submitting more than one score at a time to local storage
     $(document).ready(function() {
-        $(".saveButton").addClass("null");
-    });
+        window.setTimeout(() => {
+            window.location.reload(true);
+        }, 200);
+        });
     
     // if nothing saved at start then save empty array
     if(localStorage.getItem("data") == null){

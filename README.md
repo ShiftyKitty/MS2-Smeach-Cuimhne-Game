@@ -385,7 +385,7 @@ The aforementioned issues have now been resolved with the following fixes:
 
 - Both appearance issues on iphone 5/se on index and game pages have now been resolved. Despite what is showing in Chromes Dev tools, on real device the issues were present and it took making changes that go against appearance in Dev tools to fix on real device. Screenshots of issue fix below:
 
-Index page fix on iPhone 5/Se ![Index page fix on ihone 5/Se]()
+Index page fix on iPhone 5/Se ![Index page fix on ihone 5/Se](testing/iphoneindexpagefix.jpg)
 
 Game page fix on iphone 5/Se ![Game page fix on iphone](testing/Iphone5sgamepagefix.jpg)
 
@@ -404,6 +404,15 @@ Game page fix on iphone 5/Se ![Game page fix on iphone](testing/Iphone5sgamepage
 - Put CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) which now is presenting no issues after fixing.
 
 
+06/06/2021 (cont)
+
+Following testing and peer review with Spencer Barriball, the following issues have appeared:
+
+- Reset Button not resetting game during initial 3,2,1.. countdown sequence. This has now been fixed by reloading the page when Reset Button has been pressed. 
+
+- Suggestion raised that when user submits/saves score to scoreboard the congrats message is to disappear. This has been done now by reloading the page once user successfully logs score. 
+
+- While Spencer was playing/testing the game, I noticed that the tile switch aspect caught him off guard slightly. Therefore it may be necessary to add a few lines on the game page detailing how to play the game. 
 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
@@ -459,6 +468,43 @@ A major inspiration behind the design of this game was my friend Elise Legg who 
 
 #### Day 6 to Day 14 - Adding JavaScript
 
+Once the gameboard and tiles pieces were developed it was time to add interactivity and game functionality. 
+
+The first thing developed was the tile matching system. The main sources of inspiration for this functionality came from Youtubers [Web Dev Junkie](https://www.youtube.com/c/WebDevJunkie), [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) and [PortEXE](https://www.youtube.com/channel/UCjGQyJCSU_VVMTu5nigonqg) as well as various Stack Overflow articles on this (referenced below in Credit section). These sources helped give me good insight in how to implement this tile matching functionality in my own game and also how to proceed with the rest of the JavaScript within my game. 
+![Tile Match](development/tilematch.PNG)
+
+Following this was the Shuffle functionality. This caused a lot of issues early on. At the beginning I wanted to implement the Fisher Yates Shuffling algortithm however due to the tiles for this game being stored in three seperate divs, I was unable to work this algorithm into my project. However, I found a way around this thanks to inspiration taken from various Stack Overflow articles. (referenced below in Credit section). 
+![Tile Shuffle](development/shuffletiles.png)
+
+Once this was done, I decided to tackle the Incorrect match function. To do this, I needed Incorrect Score Tally to go up on condition that incorrect match was made and the Swap Div functionality on the condition that an incorrect match led to the incorrect selected tiles switching places. To achieve this swapping functionality, code was taken and adapted from numerous Stack Overflow sources. (referenced below in Credit section). 
+
+After this, I needed to find a way to end the game. This was acheived when user made 15 correct matches, alert would appear saying "Congratulations". 
+
+#### Day 15 to Day 21 - Adding JavaScript
+
+Once the main functionality of the game was set, it was time to work on adding timer functionality so that when timer/play button was pressed the game would begin. This was done by utilizing jQuery. 
+
+Following on from this, the Congrats end game message was enhanced showing users time completed, incorrect matches made and total overall score. This message also had area for user to enter their so their score would be added to scoreboard. 
+
+These values were then saved to local storage where they would then be taken and subsequentally added to the Scoreboard. This marked the end of the game development. 
+![scoreboard-early](development/020621-Scoreboardshowinglocalstoragedata.PNG)
+
+Next, contact page was created requesting user name, email and address. This form was then hooked up to my email using Email.js (referenced below in Credits section) ![index-early](development/contact-pg03062021.PNG)
+
+
+Index page was then created allowing user to access either Game or Scoreboard.
+![index-early](development/indexpg-03062021.PNG)
+
+<br>
+<br>
+<br>
+
+### Project Final Deploy and User Story Adherence
+
+#### Index Page
+#### Game Page
+#### Scoreboard Page
+#### Contact Us
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 
