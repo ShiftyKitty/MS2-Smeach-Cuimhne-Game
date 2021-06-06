@@ -151,15 +151,12 @@ Identify what needs to be done now and what can wait. Flow of work necessary for
 User Storys:
 
 - As a new user, I want the opening screen to be inviting and show exactly where I need to go to for what I need. 
-- As a new user, I want to know the rules and how to play the game straight away and without much issue.
 - As a new user, I want to feel engaged from the beginning to help entice me to stay and play. 
 - As a user, I want as little friction as possible for me getting to the site and playing the game. 
 - As a user, I want the memory game to actually test my memory and help improve my memory skills. 
 - As a user, I want to be able to gauge my progress throughout my playthroughs. 
-- As a user, I want to be able to adjust difficulty settings if necessary
 - As a user, I want the game to be rewarding and worthy of my time. 
 - As a user, I want the design to be easily digestible for me. 
-- As a user, I want to be able to gauge my progress throughout my playthroughs. 
 - As a user, I will probably be on the go so will like to be able to play this on mobile/tablet devices. 
 - As a user, I want to see how my memory skills stack up against other users. 
 - As a user, I want to be able to voice my opinions and give feedback on the game and potentially be notified of any future game developments. 
@@ -191,9 +188,14 @@ There will also be a Contact Us page for users to get in touch and highlight any
 
 
 ### Skeleton Plane:
-Insert Wireframes 
+Desktop Wireframes
+![Desktop](wireframes/DesktopWireframes-MS2.PNG)
 
+Tablet Wireframes
+![Tablet](wireframes/TabletWireframes-MS2.PNG)
 
+Mobile Wireframes
+![Mobile](wireframes/MobWireframes-MS2.PNG)
 ### The Surface plane:
 Font: For the fonts I wanted something playful yet slightly serious. Therefore, I have selected Righteous as primary/heading font with Raleway as secondary/general text font. 
 
@@ -332,7 +334,7 @@ Additional feature added that when user successfully submits message, a Thank yo
 
 ## Technologies Used 
 <hr>
-11/05/2021
+11/05/2021 <br>
 This project will be primarily made up of the following technologies:
 
 HTML: To create structure of site
@@ -343,7 +345,8 @@ JavaScript: To bring user interativity to project.
 
 Bootstrap: At this early stage will be used mainly for the burger toggle menu on smaller devices but possibly also on Scoreboard page for tables and Contact Page for input features. 
 
-05/06/2021
+
+05/06/2021 <br>
 In addition to the outlined technologies at start of project, the following was also used.
 
 [jQuery](https://jquery.com/) - A javascript library, used in conjunction with JavaScript to help deliver on set out features and goals when it comes to adding interactivity to the site. 
@@ -443,38 +446,43 @@ The main key feature that did not make final project was the implementation of t
 This section is to document and show the development process of this project, adhering to the user goals/stories and wireframes established earlier in this README doc. 
 
 #### Day 1 - Designing the Game Board
+![Day 1 - Designing the Game Board](development/130521-Day1.PNG)
 
 Seeing as the Game was/is the main part of this site, the majority of my time was spent working on this. 
 Day 1 saw the Game board take its shape so that I could visualize how the rings would appear on screen. 
-The white circle in center would eventually become the timer we see in final product while the yellow, pink and green circles would provide shape to the inner, middle and outer rings. ![Day 1 - Designing the Game Board](development/130521-Day1.PNG)
+The white circle in center would eventually become the timer we see in final product while the yellow, pink and green circles would provide shape to the inner, middle and outer rings. 
 
 
 #### Day 2 - Designing the Game Board
+ ![Day 2 - Designing the Game Board](development/14052021-Day2.PNG)
 
 Following on from this was the creation of the tile pieces I would like to use. From the very beginning I wanted to implement circle patterns as the base shape for the board and pieces. This matching game format is a game concept as old as time itself. I wanted to add my own twist to it and reinvent the wheel so to speak so circles was the shape I went for. 
 
-The entire game was centered at this stage and the circles used to help visualize and shape the board were removed. ![Day 2 - Designing the Game Board](development/14052021-Day2.PNG)
+The entire game was centered at this stage and the circles used to help visualize and shape the board were removed.
 
 
 #### Day 4 - Designing the Game Board
+![Day 4 - Designing the Game Board](development/160521-Day4.PNG)
 
-Day 4 saw the main coloring added to the game board and tiles. From the beginning, I decided on using colours blue, pink and yellow as explained in the Color section under The Surface Plane. ![Day 4 - Designing the Game Board](development/160521-Day4.PNG)
 
+Day 4 saw the main coloring added to the game board and tiles. From the beginning, I decided on using colours blue, pink and yellow as explained in the Color section under The Surface Plane. 
 #### Day 5 - Designing the Game Board
-
+![Day 5 - Designing the Game Board](development/iconwrongdirection.PNG)
 A major inspiration behind the design of this game was my friend Elise Legg who is a big fan of memory type games. Throughout the design and production process I wanted to make a game that I thought she would enjoy to play. Therefore, as tribute to her the icons selected are various things that come to my mind when I think of her.  
 
-![Day 5 - Designing the Game Board](development/iconwrongdirection.PNG)
+
 
 #### Day 6 to Day 14 - Adding JavaScript
-
+![Tile Match](development/tilematch.PNG)
 Once the gameboard and tiles pieces were developed it was time to add interactivity and game functionality. 
 
 The first thing developed was the tile matching system. The main sources of inspiration for this functionality came from Youtubers [Web Dev Junkie](https://www.youtube.com/c/WebDevJunkie), [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) and [PortEXE](https://www.youtube.com/channel/UCjGQyJCSU_VVMTu5nigonqg) as well as various Stack Overflow articles on this (referenced below in Credit section). These sources helped give me good insight in how to implement this tile matching functionality in my own game and also how to proceed with the rest of the JavaScript within my game. 
-![Tile Match](development/tilematch.PNG)
+
+
+![Tile Shuffle](development/shuffletiles.png)
 
 Following this was the Shuffle functionality. This caused a lot of issues early on. At the beginning I wanted to implement the Fisher Yates Shuffling algortithm however due to the tiles for this game being stored in three seperate divs, I was unable to work this algorithm into my project. However, I found a way around this thanks to inspiration taken from various Stack Overflow articles. (referenced below in Credit section). 
-![Tile Shuffle](development/shuffletiles.png)
+
 
 Once this was done, I decided to tackle the Incorrect match function. To do this, I needed Incorrect Score Tally to go up on condition that incorrect match was made and the Swap Div functionality on the condition that an incorrect match led to the incorrect selected tiles switching places. To achieve this swapping functionality, code was taken and adapted from numerous Stack Overflow sources. (referenced below in Credit section). 
 
@@ -486,8 +494,11 @@ Once the main functionality of the game was set, it was time to work on adding t
 
 Following on from this, the Congrats end game message was enhanced showing users time completed, incorrect matches made and total overall score. This message also had area for user to enter their so their score would be added to scoreboard. 
 
-These values were then saved to local storage where they would then be taken and subsequentally added to the Scoreboard. This marked the end of the game development. 
 ![scoreboard-early](development/020621-Scoreboardshowinglocalstoragedata.PNG)
+
+These values were then saved to local storage where they would then be taken and subsequentally added to the Scoreboard. This marked the end of the game development. 
+
+
 
 Next, contact page was created requesting user name, email and address. This form was then hooked up to my email using Email.js (referenced below in Credits section) ![index-early](development/contact-pg03062021.PNG)
 
@@ -502,9 +513,58 @@ Index page was then created allowing user to access either Game or Scoreboard.
 ### Project Final Deploy and User Story Adherence
 
 #### Index Page
+![index-final](development/Indexfinal.PNG)
+Index page showcases the main navigation page. As mentioned earlier in this document, eventually I would like to introduce more games. This index page will be where majority of navigation will take place. 
+
+Opening screen is fun and enticing and shows users exactly where they need to go to for what they need. 
+
+
+
 #### Game Page
+![Game Page](development/game-final.PNG)
+Screenshots show final game page with the game in action on both mobile and tablet devices. Once user presses middle play button, the game begins. 
+
+A slight concern I had during intial stages of game development was that the game would not appear well on mobile. I have tested rigourously on iphone 5s with a screen width of roughly 320px and it performs great and a lot better than i expected meaning that it is the perfect game for someone on the move.
+
+With the swapping function in place, the game proved also to be a lot more challenging than initially expected but not impossible. I found as a user, my performance within the game increased the more I played it. 
+
+
+
+
+#### Congrats Message
+![Congrats Message](development/CongratsFinal.PNG)
+
+Once user beats game, the below Congratulations message appears. Here, we show the users time completed, incorrect matched tiles, overall score (addition of time completed and incorrect tiles matched) and an area for the user to enter their name. Once Enter to Scoreboard has been pressed, users score is saved in Local Storage to be used in Scoreboard. 
+
+
+
 #### Scoreboard Page
+![Scoreboard Page](development/scoreboard-final.PNG)
+Here we have the scoreboard that takes the data saved in Local Storage and displays here. 
+Ideally I would like this scoreboard to incorporate all users who play this games scores rather than just for that users session. This might be something I look into sorting out in the future. 
+Scoreboard is sorted by Overall Score in descending order meaning the player with the lowest sum of Time Completed and Incorrect Matches is deemed the best player. 
+This also allows the user to track their scores and progress with each playthrough being recorded. 
+
+
+
+
 #### Contact Us
+![Contact Us](development/contact-final.PNG)
+
+Contact us page was designed to allow users voice their opinions of the game to me and report any issues that may arise. The contact form is successfully hooked up to my email via Email.js. 
+
+
+
+#### Thank You message
+![Thank You message](development/thankyoumsg.PNG)
+
+Once user has successfully sent a message from the contact page, the form is replaced by a Thank You message informing the user that someone will be in contact shortly. 
+
+<br>
+<br>
+<br>
+
+### How to Deploy?
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 
