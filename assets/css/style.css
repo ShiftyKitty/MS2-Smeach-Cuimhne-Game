@@ -964,6 +964,8 @@ footer {
     .index-play-game {
         position: absolute;
         width: 80%;
+        height: 10%;
+        top: 35%;
     }
 
     .index-play-game h4 {
@@ -976,6 +978,8 @@ footer {
     .index-scoreboard {
         position: absolute;
         width: 80%;
+        height: 10%;
+        top: 50%;
 
     }
 
