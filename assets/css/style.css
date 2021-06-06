@@ -581,6 +581,7 @@ footer {
 }
 
 .reset-button {
+    font-size: 120%;
     width: 20%;
     height: 50px;
     border: 1px solid black;
