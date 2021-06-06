@@ -350,6 +350,56 @@ In addition to the outlined technologies at start of project, the following was 
 
 ## Testing
 <hr>
+
+Testing was performed on a continuous basis throughout the entirety of this project, especially when it came to implementing JavsScript on the game. 
+
+The HTML, CSS and Javascript will be put through the relevant code validators once all user testing and fixes have been complete.
+
+The following issues have been noticed during production that a fix has not been found yet:
+
+- Due to rotation method used to make tiles appear in circle patterns, icons all appear to be pointing in an anticlockwise direction.  ![Icon Issue](testing/iconwrongdirection.PNG)
+
+
+05/06/2021 <br>
+Link to site has been sent to friends and family to test across a variety of devices. The following issues have arose:
+
+- On mobile device, the scoreboard is flowing over the edge. Will need to reduce font size to fix. ![Scoreboard Overflow](testing/ScoreboardOverEdge.png)
+
+- When submitting to scoreboard, user is able to submit the same score multiple times to scoreboard. Need to deactivate Save to Scoreboard button in Congrats message post click to resolve. ![Multiple Submission Issue](testing/MultipleSubmissionIssue.png)
+
+- When user clicks in to Hamburger Toggle Menu, play game is positioned on top of Scoreboard and Contact Us. Not sure what is causing it at this moment. Will need to test further. ![ToggleMenuIssue](testing/ToggleButtonDisplayIssue.png)
+
+- On real iPhone 5/SE the website does not seem to be appearing well on index page and game page. The writing appears to be hovering outside its container on the Index page. ![IPhone 5/Se index page](testing/iphone5sIndexpageIssue.jpg)
+
+- Game Page issue on iPhone 5/SE. ![IPhone 5/SE game page](testing/iphone5sgameissue.jpg)
+
+
+06/06/2021
+The aforementioned issues have now been resolved with the following fixes:
+
+- Scoreboard overflow issue was easily remedied by reducing font-size to 100% on mobile devices.
+
+- Multiple score submission issue fixed by adding class "null" post save to scoreboard button click in JavaScript. This null class was designed for Game to prevent user from clicking timer when game was in play. It sets point-event to none. 
+
+- Play game appearing over toggle menu has been fixed. Cause was related to postioning Play Game button in center of Nav Bar. To fix, set position to inherit and set transform: translate(0%, 0%) for max screen width 990px. 
+
+- Both appearance issues on iphone 5/se on index and game pages have now been resolved. Despite what is showing in Chromes Dev tools, on real device the issues were present and it took making changes that go against appearance in Dev tools to fix on real device. Screenshots of issue fix below:
+
+Index page fix on iPhone 5/Se ![Index page fix on ihone 5/Se]()
+
+Game page fix on iphone 5/Se ![Game page fix on iphone](testing/Iphone5sgamepagefix.jpg)
+
+- Icon issue now fixed. Resolved by targeting the divs within the tiles and negatively rotating it eg rotate(108deg) becomes rotate(-108deg) and so on. Icons still maintain proper direction even during tile swap. 
+
+06/06/2021 (cont)
+
+- Put HTML code through [W3C Markup Validation Service](https://validator.w3.org/) which brought back errors to fix. 
+
+- Put CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) which brought back errors to fix. 
+
+
+
+
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
