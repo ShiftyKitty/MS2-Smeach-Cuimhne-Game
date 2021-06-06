@@ -581,7 +581,7 @@ footer {
 }
 
 .reset-button {
-    font-size: 120%;
+    font-size: 100%;
     width: 20%;
     height: 50px;
     border: 1px solid black;
@@ -859,19 +859,12 @@ footer {
         font-size: 80%;
     }
 
-    .score-tally {
+    .score-tally {        
         font-size: 90%;
-        bottom: -25%
-    }
-
-    .reset-button h5 {
-        font-size: 90%;
-
     }
 
     .reset-button {
         font-size: 90%;
-        bottom: -22%;
     }
 
     
@@ -1064,8 +1057,16 @@ footer {
         font-size: 250%; 
     }
 
+    .score-tally {
+        height: 15%;
+    }
+
     .score-tally h5 {
-        font-size: 100%;
+        font-size: 90%;
+    }
+
+    .reset-button {
+        font-size: 90%;
     }
     
     .outer-ring .tile:nth-child(1) {
@@ -1242,11 +1243,13 @@ footer {
     }
 
     .score-tally  {
-        bottom: 2%;
+        height: 10%;
+        bottom: 0%;
     }
 
     .reset-button  {
-        bottom: 2%;
+        bottom: 0;
+        font-size: 100%;
     }
 
     .score-tally h5 {

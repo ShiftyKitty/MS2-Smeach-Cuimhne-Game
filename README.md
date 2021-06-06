@@ -197,7 +197,7 @@ Insert Wireframes
 ### The Surface plane:
 Font: For the fonts I wanted something playful yet slightly serious. Therefore, I have selected Righteous as primary/heading font with Raleway as secondary/general text font. 
 
-Color: The colours chosen for Project Smeach Cuimhne were carefully selected. According to research done by the University of Florida in the 2015 paper [The Effect of Color on Working Memory Performance](https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1619&context=honorstheses1990-2015), the use of blue heightens user memory, creativity and calmness. In addition, pink apparently is associated with fun while yellow brings with it attentiveness. Therefore the main site colour will be Curious Blue (45, 167, 217) with some lighter variations of this throughout. 
+Color: The colours chosen for Project Smeach Cuimhne were carefully selected. According to research done by the University of Florida in the 2015 paper [The Effect of Color on Working Memory Performance](https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1619&context=honorstheses1990-2015), the use of blue heightens user memory, creativity and calmness. In addition, pink apparently is associated with fun while yellow brings with it attentiveness. In addition to this, I wanted the game to have a certain 90's feel, therefore the main site colour will be Curious Blue (45, 167, 217) with some lighter variations of this throughout. 
 Also will be using a Miami Pink type colour (255, 104, 168) to represent the colour of the tiles. Dandelion yellow (248, 233, 36) will be the other color used throughout site.
 
 Any images used throughout the site will be obtained from image sharing sites and referenced appropriately in the Media section in Credits of this README doc. 
@@ -379,9 +379,9 @@ The aforementioned issues have now been resolved with the following fixes:
 
 - Scoreboard overflow issue was easily remedied by reducing font-size to 100% on mobile devices.
 
-- Multiple score submission issue fixed by adding class "null" post save to scoreboard button click in JavaScript. This null class was designed for Game to prevent user from clicking timer when game was in play. It sets point-event to none. 
+- Multiple score submission issue fixed by adding class "null" post "Save to Scoreboard" button click in JavaScript. This null class was designed for Game to prevent user from clicking timer when game was in play. It sets point-event to none. 
 
-- Play game appearing over toggle menu has been fixed. Cause was related to postioning Play Game button in center of Nav Bar. To fix, set position to inherit and set transform: translate(0%, 0%) for max screen width 990px. 
+- Play game tab appearing over toggle menu has been fixed. Cause was related to postioning Play Game button in center of Nav Bar. To fix, set position to inherit and set transform: translate(0%, 0%) for max screen width 990px. 
 
 - Both appearance issues on iphone 5/se on index and game pages have now been resolved. Despite what is showing in Chromes Dev tools, on real device the issues were present and it took making changes that go against appearance in Dev tools to fix on real device. Screenshots of issue fix below:
 
@@ -389,13 +389,19 @@ Index page fix on iPhone 5/Se ![Index page fix on ihone 5/Se]()
 
 Game page fix on iphone 5/Se ![Game page fix on iphone](testing/Iphone5sgamepagefix.jpg)
 
-- Icon issue now fixed. Resolved by targeting the divs within the tiles and negatively rotating it eg rotate(108deg) becomes rotate(-108deg) and so on. Icons still maintain proper direction even during tile swap. 
+- Icon issue now fixed. Resolved by targeting the divs within the tile divs and negatively rotating it eg rotate(108deg) becomes rotate(-108deg) and so on. Icons still maintain proper upright direction even during tile swap. 
 
 06/06/2021 (cont)
 
 - Put HTML code through [W3C Markup Validation Service](https://validator.w3.org/) which brought back errors to fix. 
 
 - Put CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) which brought back errors to fix. 
+
+06/06/2021 (cont)
+
+- Put HTML code through [W3C Markup Validation Service](https://validator.w3.org/) which now is presenting no issues after fixing.
+
+- Put CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) which now is presenting no issues after fixing.
 
 
 
@@ -418,6 +424,42 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Deployment
 <hr>
+
+### Development Life Cycle
+
+Project Smeach Cuimhne maintained its design and functionality from conception pretty much consistently throughout the entire production. 
+
+The main key feature that did not make final project was the implementation of the Switch Off button to toggle off the switching functionality that occurs when a user makes an incorrect match. I decided that this will be a seperate game entirely and will be added on at a later date. 
+
+This section is to document and show the development process of this project, adhering to the user goals/stories and wireframes established earlier in this README doc. 
+
+#### Day 1 - Designing the Game Board
+
+Seeing as the Game was/is the main part of this site, the majority of my time was spent working on this. 
+Day 1 saw the Game board take its shape so that I could visualize how the rings would appear on screen. 
+The white circle in center would eventually become the timer we see in final product while the yellow, pink and green circles would provide shape to the inner, middle and outer rings. ![Day 1 - Designing the Game Board](development/130521-Day1.PNG)
+
+
+#### Day 2 - Designing the Game Board
+
+Following on from this was the creation of the tile pieces I would like to use. From the very beginning I wanted to implement circle patterns as the base shape for the board and pieces. This matching game format is a game concept as old as time itself. I wanted to add my own twist to it and reinvent the wheel so to speak so circles was the shape I went for. 
+
+The entire game was centered at this stage and the circles used to help visualize and shape the board were removed. ![Day 2 - Designing the Game Board](development/14052021-Day2.PNG)
+
+
+#### Day 4 - Designing the Game Board
+
+Day 4 saw the main coloring added to the game board and tiles. From the beginning, I decided on using colours blue, pink and yellow as explained in the Color section under The Surface Plane. ![Day 4 - Designing the Game Board](development/160521-Day4.PNG)
+
+#### Day 5 - Designing the Game Board
+
+A major inspiration behind the design of this game was my friend Elise Legg who is a big fan of memory type games. Throughout the design and production process I wanted to make a game that I thought she would enjoy to play. Therefore, as tribute to her the icons selected are various things that come to my mind when I think of her.  
+
+![Day 5 - Designing the Game Board](development/iconwrongdirection.PNG)
+
+#### Day 6 to Day 14 - Adding JavaScript
+
+
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
