@@ -11,7 +11,8 @@ $(document).ready(function(){
             tilesWrong = 0;
             document.querySelector(".incorrect-score").innerHTML = tilesWrong;
 
-        // all tiles shuffled
+        // all tiles shuffled. 
+        // code for this was obtained from StackOverflow. Referenced in Credits section in ReadMe doc
         $(".inner-ring").html($(".inner-ring .tile").sort(function(){
         return Math.random()-0.5;
         }));
@@ -89,7 +90,7 @@ $(document).ready(function(){
             });
             
             // To reset timer and all tile pieces when clicked
-            // Code received from StackOverflow
+            // Code received from StackOverflow. 
         $(".reset-button").click(function(){
             window.setTimeout(() => {
                 window.location.reload(true);
@@ -97,7 +98,7 @@ $(document).ready(function(){
             });
             });
     
-    
+    //code for this was obtained from StackOverflow and Youtube tutorials. Referenced in Credits section in ReadMe doc
     let selectedTile = null;
     let stopSelect = false;
     let tilesMatched = 0;
@@ -136,7 +137,7 @@ $(document).ready(function(){
             var TileB = selectedTile;
             
             //Div swap function
-            // Function received from Stack Overflow
+            // Function received from Stack Overflow. Referenced in Credits section in ReadMe doc
             $.fn.swap = function (elem) 
             {
             elem = elem.jquery ? elem : $(elem);
@@ -169,7 +170,7 @@ $(document).ready(function(){
             tilesMatched++;
             selectedTile = null;
             
-            //To target to Congrats message to user
+            //To target Congrats message to user
             let congratsMessage = document.querySelector(".congrats-score-message");
             let overlay = document.querySelector("#overlay");
             
@@ -211,6 +212,7 @@ $(document).ready(function(){
     }
 
     //save users score to local storage to display on scoreboard
+    // code for this was obtained from StackOverflow and Youtube sources. Referenced in Credits section in ReadMe doc
     function save() {
     let username = document.querySelector("#input").value;
     let timeCompleted = document.querySelector("#final-time").innerHTML;
@@ -220,7 +222,7 @@ $(document).ready(function(){
     // to store all users data
     let new_data = {"username":username, "time_completed":timeCompleted, "incorrect_tiles_matched":totalIncorrects, "overall_score":overallScore};
     
-    // to prevent user submitting more than one score at a time to local storage
+    // Brings user back to Game screen once score has been submitted. 
     $(document).ready(function() {
         window.setTimeout(() => {
             window.location.reload(true);

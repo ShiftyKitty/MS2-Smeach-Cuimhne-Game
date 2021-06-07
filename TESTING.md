@@ -198,14 +198,21 @@ Have made changes to HTML and CSS to slightly explain the game. This was not som
 
 07/06/2021 (cont)<br>
 
-- Put HTML code through [W3C Markup Validation Service](https://validator.w3.org/) which brought back NO errors to fix. However brought back warning stating that type attribute is not necessary for Javascript so removed from code.
+- Put HTML code through [W3C Markup Validation Service](https://validator.w3.org/) which brought back NO errors to fix. However brought back warning stating that type attribute is not necessary for Javascript so have removed this type from code.
 ![jstext](testing/type-text-js-issue.PNG)
 
 - Put CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) which brought back NO errors to fix. 
 
 - Put JavaScript code through [JS Hint](https://jshint.com/) which brought back NO errors to fix. 
 
+- Put Live site through [Responsive Design Checker](https://responsivedesignchecker.com/). All pages of site appear well across all device screens available. 
 
 07/06/2021 (cont)
+
+- Final testing done and everything appears to be operating well. All recognised bugs and issues have been fixed. Overall happy with how things turned out. 
+
+
+
+
 
 

@@ -13,12 +13,12 @@ The overall premise of this game is the following:
 
 ## Table of Contents:
 
-- [UX](#-UX) <br>
-- [Features](#-Features) <br>
-- [Technologies Used](#-Technologies-Used) <br>
-- [Testing](#-Testing) <br>
-- [Deployment](#-Deployment) <br>
-- [Credits](#-Credits) <br>
+- [UX](##-UX) <br>
+- [Features](##-Features) <br>
+- [Technologies Used](##-Technologies-Used) <br>
+- [Testing](##-Testing) <br>
+- [Deployment](##-Deployment) <br>
+- [Credits](##-Credits) <br>
 
 
 ## UX
@@ -442,6 +442,9 @@ Code ideas and snippets came from the following sources:
 
     - [{RhymBil} - How to STORE and USE an Array in Local Storage](https://www.youtube.com/watch?v=2hJ1rTANVnk)
 
+- Email.JS hook up:
+    - Code was received from Code Institute and adapted for project. 
+
 - Tile and timer Icons:
     - All icons used in Project were obtained from [Font Awesome](https://fontawesome.com/)
 
@@ -460,4 +463,4 @@ The circle patterns used had 2 meanings.
 
 - Continuing on with the anime theme, the shape shares similarities with the [Tsuki no Me](https://i1.sndcdn.com/artworks-000088907825-i4g25w-t500x500.jpg) from the anime Naruto.
 
-The name Smeach Cuimnhe is the irish for "Memory Flip". Big component of this game was the tiles swapping/flipping places when an incorrect match was made. 
+The name Smeach Cuimhne is the irish for "Memory Flip". Big component of this game was the tiles swapping/flipping places when an incorrect match was made. 
