@@ -20,7 +20,7 @@ Business goals? Why are we special? <br>
 As far as my research can tell, there are no other games that have this switching aspect included in their game, which separates it from the pack.
 
 Who are competitors? What are they doing? <br>
-The main competitors are the https://www.helpfulgames.com/subjects/brain-training/memory.html and https://matchthememory.com/colors which offer your basic card matching format. 
+The main competitors are the [Helpful Games](https://www.helpfulgames.com/subjects/brain-training/memory.html) and [Match the Memory](https://matchthememory.com/colors ) which offer your basic card matching format. 
 
 You are presented with a table of covered cards and the user is to try and match them. There are probably many more examples of this type of game in circulation, as it is a premise as old as time itself, however these are the main ones I can find currently online.
 
@@ -88,6 +88,7 @@ What we are making is:
 - This score is then logged on to a community scoreboard and they are shown their rank amongst other users of the game. 
 
 - A toggle switch will be added to reduce difficulty of game for those who are looking to play without the added hassle of the switch, however these results will not show on a scoreboard (for now). 
+    -   Update: toggle switch not present in final game but will be added at later date. 
 
 Will it add value, and what value will it add? Who's our target audience? Who is our demographic, or our demographics? <br>
 Our target audience is someone who is looking for a fun and testing game to challenge their memory. I want this game to feel as rewarding to player as possible without coddling them. I want anyone to be able to pick up this game and be able to play and understand the objective. 
@@ -98,7 +99,7 @@ To be challenged and feel they can not only beat their own personal best score b
 And how is our offering, or proposed offering, different from our competitors and substitutes? <br>
 As it stands, I don’t think anyone else is offering a pattern matching game like this with the added caveat of tiles switching places depending on their incorrect answer/match. 
 
-Also, because of this extra layer of complexity to the game I feel it is only fair for the user to see exactly the lay of the board for 5 seconds before the game actually starts. This is not a feature that other games of similar nature are offering. 
+Also, because of this extra layer of complexity to the game I feel it is only fair for the user to see exactly the lay of the board for ~~5~~ 3 seconds before the game actually starts. This is not a feature that other games of similar nature are offering. 
 
 And what can the user expect? <br>
 The user can expect a fun, testing, rewarding and engaging experience with the end result being them wanting to continue to play after first playthrough in the attempt to beat their own score and other players scores. 
@@ -112,7 +113,7 @@ The features that I want to implement currently are as follows:
 
 - A tile matching game with 30 pieces on board
 - A tile switching mechanic that comes into effect when user selects 2 non matching tiles. 
-- A 5 sec countdown timer at start of game. During this time, all patterns on board will be visible. 
+- A ~~5~~ 3 sec countdown timer at start of game. During this time, all patterns on board will be visible. 
 - A timer in centre of board that counts up when game starts
 - Incorrect scoreboard showing the amount of incorrect matches user makes
 - Toggle switch that gives user option to turn off switch functionality
@@ -122,6 +123,7 @@ The features that I want to implement currently are as follows:
 At this very early stage of development I am debating whether or not to include a user sign up and login feature. I think it will help log scores to scoreboard and even could send scores to users emails. It annoys me as a user when games/sources are sign up protected and I do not wish for Project Smeach Cuimhne to have features that I do not like myself. We will see how we get on with this. 
 
 Was also thinking of adding another feature where the more consecutive correct patterns a user makes places a delay on the timer to reward good memory skills. I might not add this to this iteration of the game but could possibly be a feature added post Milestone Project 2. 
+<br>
 <br>
 
 Identify what needs to be done now and what can wait. Flow of work necessary for project completion:
@@ -140,7 +142,7 @@ Identify what needs to be done now and what can wait. Flow of work necessary for
 - Add timer that counts up when game starts. 
 - Add pop up alert/window that shows user their overall score upon game completion.
 - Once game completed, present user clear option to play again.
-- Set up toggle switch to allow user to turn off/on switch functionality.
+- ~~Set up toggle switch to allow user to turn off/on switch functionality.~~
 - Add reset button functionality.
 - Send out to people to test and take feedback
 - Test game for bugs and squash
@@ -161,7 +163,7 @@ User Storys:
 - As a user, I want to see how my memory skills stack up against other users. 
 - As a user, I want to be able to voice my opinions and give feedback on the game and potentially be notified of any future game developments. 
 
-
+<br>
 
 
 ### The Structure Plane:
@@ -240,7 +242,7 @@ Here we have the main page of the project. Where the user can play the game.
 
             - Once user has cleared entire board, game is finished and user is presented with an alert showing their score and an option/text area to input username. 
 
-            - After inputting username and selecting enter, their score is then logged to the scoreboard on the Scoreboard page. A subsequent message will inform the user to check scoreboard to see their position. 
+            - After inputting username and selecting enter, their score is then logged to the scoreboard on the Scoreboard page.
 
             - Once out of alert, triangle play button is presented again in centre of board with a new game ready to be played again. 
 
@@ -251,15 +253,16 @@ Here we have the main page of the project. Where the user can play the game.
     - Incorrect Scores: Board shown below the game that tallys up the amount of incorrect patterns user has made in game. 
     - Reset Button: Button that allows user to reset the game at any time. 
     - Turn off switch: ~~Allows user to turn off switch functionality when incorrect pattern made to allow for easier gameplay~~
-    02/06/2021
+
+    02/06/2021 <br>
     Have decided against adding Turn Off Switch. In future iterations of game I will introduce an Easy mode that will be a basic tile matching game. 
 
 
-- Scoreboard:
+- Scoreboard: <br>
 Table presented with Username, Time Completed, Incorrect Patterns Made and Overall Score presented across the top. 
 Once user has completed the game,  Username, Time Completed, Incorrect Patterns Made and Overall Score are logged here. These criteria in turn will determine the user rank. 
 
-- Contact Us: 
+- Contact Us: <br>
 Presents user option to be able to contact host with any queries or issues that may arise when playing game. 
 Form here requesting Name, Email Address and user query/message. Also toggle button here that asks to be toggled if user is interested in hearing about future game developments. Also Send button to send message. 
 03/06/2021 - Additional feature added that when user successfully submits message, a Thank you message appears for user saying someone will be in touch shortly.
@@ -313,7 +316,7 @@ Once user has completed the game,  Username, Time Completed, Incorrect Patterns 
 
 - Contact Us: 
 Presents user option to be able to contact host with any queries or issues that may arise when playing game. 
-Form here requesting Name, Email Address and user query/message. Also toggle button here that asks to be toggled if user is interested in hearing about future game developments. Also Send button to send message. 
+Form here requesting Name, Email Address and user query/message. Also toggle button here that asks to be toggled if user is interested in hearing about future game developments. Also Send button to send message. <br>
 Additional feature added that when user successfully submits message, a Thank you message appears for user saying someone will be in touch shortly.
 
 ### Future Features to be implemented after MS2:
@@ -359,32 +362,61 @@ In addition to the outlined technologies at start of project, the following was 
 Testing file can be found through the following [link](TESTING.md)
 
 <br>
-<br>
-<br>
 
 ## Deployment
 <hr>
 
-### How to Deploy?
+Project Smeach Cuimhne was developed using Gitpod IDE, committed to git and pushed to GitHub using the built in function within gitpod. 
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+To deploy this page to GitHub pages from its GitHub repository, the following steps were taken:
 
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+1. Log into GitHub.
+2. From list of repos on screen, select [ShiftyKitty/MS2-Smeach-Cuimhne-Game](https://github.com/ShiftyKitty/MS2-Smeach-Cuimhne-Game)
+3. From the menu items near the top of the page, select Settings.
+4. Scroll to GitHub Pages section. Alternatively select Pages tab on left hand side of screen in Desktop.
+5. Under Source click the drop-down menu labelled None and select Master Branch
+6. On selecting Master Branch the page is automatically refreshed. If this does not occur refresh the page. 
+7. Go back to GitHub Pages section to retrieve the link to the deployed website.
+
+At the moment of submitting this Milestone project, the Development Branch and Master Branch are identical. 
+
+### How to run this project locally
+To clone this project from Github:
+
+1. Follow this link to [ShiftyKitty/MS2-Smeach-Cuimhne-Game](https://github.com/ShiftyKitty/MS2-Smeach-Cuimhne-Game)
+2. Above the list of files, click Code.
+3. In the Clone with HTTPs section, copy the clone URL for the repository. 
+4. In your local IDE open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made. 
+6. Type git clone and paste the URL copied in Step 3.
+7. Press Enter. Your local clone will now be created. 
 
 ## Credits
 <hr>
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-
-You can break the credits section up into Content and Media, depending on what you have included in your project.
 
 ### Content
-The text for the Home page was taken from Wikipedia Article A
-Instructions on how to implement form validation on the Sign Up page was taken from Specific YouTube Tutorial
-The icons in the footer were taken from Font Awesome
+
+- Code idea for Game Board shape came from [kodhus.com](http://kodhus.com/newsite/put-items-evenly-circles-circumference/)
+
+- Code ideas and snippets for tile matching functionality came from the following sources: 
+    - [Web Dev Junkie](https://youtu.be/bbb9dZotsOc)
+
+    - [Web Dev Simplified](https://www.youtube.com/watch?v=28VfzEiJgy4)
+
+    - [freeCodeCamp](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+
+    - [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2316s)
+
+    - [StackOverflow - Creating a card matching game](https://stackoverflow.com/questions/36657944/creating-a-card-matching-game)
+
+- Shuffle Functionality:
+    - [StackOverflow - Randomize a sequence of div elements with jQuery](https://stackoverflow.com/questions/1533910/randomize-a-sequence-of-div-elements-with-jquery)
+    - [StackOverflow - javascript Shuffle DIV's within DIV](https://stackoverflow.com/questions/43979555/javascript-shuffle-divs-within-div)
+    - [StackOverflow - Shuffle all DIVS with the same class](https://stackoverflow.com/questions/13427287/shuffle-all-divs-with-the-same-class)
+    - [StackOverflow - math.random()-0.5 for Multiple Array](https://stackoverflow.com/questions/49273950/math-random-0-5-for-multiple-array)
+
+- Swapping Functionality: 
+    - 
 
 ### Media
 The photos used on the home and sign up page are from This Open Source site
