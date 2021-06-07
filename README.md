@@ -1,4 +1,6 @@
 # Project Name - Smeach Cuimhne (Memory Flip)
+
+
 11/05/2021 <br>
 The purpose of the Smeach Cuimhne project is to create an online game that is fun, engaging, and competitive for the user that also tests their memory. 
 
@@ -8,6 +10,16 @@ The overall premise of this game is the following:
 - However, where this game differs from the usual matching format is that when a user gets a pair wrong, the tiles/icons switch places creating a higher emphasis on getting the right pairs and punishing the users with poor memory (hehe). 
 - Users overall score is based on correct pairs achieved, incorrect attempts made and time it takes for the user to clear the board. 
 - The goal is to clear the board, making as few incorrect pairs as possible in the shortest timeframe possible. 
+
+## Table of Contents:
+
+- [UX](#-UX) <br>
+- [Features](#-Features) <br>
+- [Technologies Used](#-Technologies-Used) <br>
+- [Testing](#-Testing) <br>
+- [Deployment](#-Deployment) <br>
+- [Credits](#-Credits) <br>
+
 
 ## UX
 
@@ -396,9 +408,10 @@ To clone this project from Github:
 
 ### Content
 
-- Code idea for Game Board shape came from [kodhus.com](http://kodhus.com/newsite/put-items-evenly-circles-circumference/)
+Code ideas and snippets came from the following sources: 
 
-- Code ideas and snippets for tile matching functionality came from the following sources: 
+- Code idea for Game Board shape came from [kodhus.com](http://kodhus.com/newsite/put-items-evenly-circles-circumference/)
+-  For tile matching functionality the following sources were used:
     - [Web Dev Junkie](https://youtu.be/bbb9dZotsOc)
 
     - [Web Dev Simplified](https://www.youtube.com/watch?v=28VfzEiJgy4)
@@ -409,34 +422,42 @@ To clone this project from Github:
 
     - [StackOverflow - Creating a card matching game](https://stackoverflow.com/questions/36657944/creating-a-card-matching-game)
 
-- Shuffle Functionality:
+- Shuffle Functionality the following sources were used:
     - [StackOverflow - Randomize a sequence of div elements with jQuery](https://stackoverflow.com/questions/1533910/randomize-a-sequence-of-div-elements-with-jquery)
     - [StackOverflow - javascript Shuffle DIV's within DIV](https://stackoverflow.com/questions/43979555/javascript-shuffle-divs-within-div)
     - [StackOverflow - Shuffle all DIVS with the same class](https://stackoverflow.com/questions/13427287/shuffle-all-divs-with-the-same-class)
     - [StackOverflow - math.random()-0.5 for Multiple Array](https://stackoverflow.com/questions/49273950/math-random-0-5-for-multiple-array)
 
-- Swapping Functionality: 
-    - 
+- Swapping Functionality the following sources were used: 
+    - [StackOverflow - Copy certain text from one div into another div](https://stackoverflow.com/questions/5702413/copy-certain-text-from-one-div-into-another-div)
+    - [StackOverflow - Is there a native jQuery function to switch elements?](https://stackoverflow.com/questions/698301/is-there-a-native-jquery-function-to-switch-elements)
+    - [StackOverflow - Replace Div with another Div](https://stackoverflow.com/questions/5062916/replace-div-with-another-div)
+
+- Local Storage and Scoreboard the following sources were used:
+    - [StackOverflow - Creating a table through local storage data?](https://stackoverflow.com/questions/59035468/creating-a-table-through-local-storage-data)
+
+    - [James Q Quick - Save High Scores in Local Storage](https://www.youtube.com/watch?v=DFhmNLKwwGw)
+
+    - [James Q Quick - Load and Display High Scores from Local Storage](https://www.youtube.com/watch?v=jfOv18lCMmw)
+
+    - [{RhymBil} - How to STORE and USE an Array in Local Storage](https://www.youtube.com/watch?v=2hJ1rTANVnk)
+
+- Tile and timer Icons:
+    - All icons used in Project were obtained from [Font Awesome](https://fontawesome.com/)
 
 ### Media
-The photos used on the home and sign up page are from This Open Source site
-The images used for the gallery page were taken from this other open source site
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
+The image used for this site was obtained from [Unsplash](https://unsplash.com/)
+-   The image used on Index page was taken by [Sonder Quest](https://unsplash.com/photos/6_tSiHVv_y4)
 
 ### Acknowledgements 
 
-Other General Project Advice
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work!
+I received many sources of inspiration for this project, however the main goal I had was to make a game that was equal parts challenging, fun and worthy of someones time. 
 
-One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through this article by Chris Beams on How to Write a Git Commit Message
+When designing and making this website, I built it with my friend Elise Legg in mind. She likes to play memory games so everything implemented in this site had her in mind. The icons used are a tribute to her and things she likes and I associate with her. 
 
-Make sure to keep the messages in the imperative mood
-When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
+The circle patterns used had 2 meanings.
+-   Tile matching games are old and done and I wanted to reinvent the wheel slightly when it came to mine. Wheel has a circular shape. Therefore circle.
 
-For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept.
-Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
+- Continuing on with the anime theme, the shape shares similarities with the [Tsuki no Me](https://i1.sndcdn.com/artworks-000088907825-i4g25w-t500x500.jpg) from the anime Naruto.
 
-Writing Your Best Code
-HTML & CSS Coding Best Practices
-Google HTML/CSS Style Guide
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!
+The name Smeach Cuimnhe is the irish for "Memory Flip". Big component of this game was the tiles swapping/flipping places when an incorrect match was made. 

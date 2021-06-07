@@ -160,8 +160,6 @@ A slight concern I had during intial stages of game development was that the gam
 With the swapping function in place, the game proved also to be a lot more challenging than initially expected but not impossible. I found as a user, my performance within the game increased the more I played it. 
 
 
-
-
 #### Congrats Message
 ![Congrats Message](development/CongratsFinal.PNG)
 
@@ -178,8 +176,6 @@ Scoreboard is sorted by Overall Score in descending order meaning the player wit
 This also allows the user to track their scores and progress with each playthrough being recorded. 
 
 
-
-
 #### Contact Us
 ![Contact Us](development/contact-final.PNG)
 
@@ -192,7 +188,24 @@ Contact us page was designed to allow users voice their opinions of the game to 
 
 Once user has successfully sent a message from the contact page, the form is replaced by a Thank You message informing the user that someone will be in contact shortly.
 
+<br>
 
 07/06/2021 <br>
-Final day of testing before submission. Have made changes to HTML and CSS to slightly explain the game. This was not something I wished to do but ideally I want user to pick up the game and play with no frustration, therefore this may be necessary. 
+Final day of testing before submission. 
+
+Have made changes to HTML and CSS to slightly explain the game. This was not something I wished to do but ideally I want user to pick up the game and play with no frustration, therefore this may be necessary. See image below with rules added to game ![rules](testing/rules.PNG).
+
+
+07/06/2021 (cont)<br>
+
+- Put HTML code through [W3C Markup Validation Service](https://validator.w3.org/) which brought back NO errors to fix. However brought back warning stating that type attribute is not necessary for Javascript so removed from code.
+![jstext](testing/type-text-js-issue.PNG)
+
+- Put CSS code through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) which brought back NO errors to fix. 
+
+- Put JavaScript code through [JS Hint](https://jshint.com/) which brought back NO errors to fix. 
+
+
+07/06/2021 (cont)
+
 

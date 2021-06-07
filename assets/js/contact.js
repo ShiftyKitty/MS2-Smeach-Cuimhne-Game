@@ -12,7 +12,7 @@ function sendMail(contactForm) {
         //Thank you for contacting message to appear once user has successfully submitted a message
         function thankYou() {
             document.querySelector(".contact-form").innerHTML = `<h4>Thank you for your message.</h4>
-            <p>We will be in contact with you shortly.</p>`
+            <p>We will be in contact with you shortly.</p>`;
         },
         function(response){
             

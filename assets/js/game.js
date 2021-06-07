@@ -51,15 +51,14 @@ $(document).ready(function(){
     
     // Start countup timer after countdown timer to track the users playing time
     $(".timer").click(function() { setTimeout (() => {
-                let allTiles = $(this).siblings().children();
-                let gameSeconds = 0;
-                let countUp = setInterval(countUpTimer, 1000);
+            let allTiles = $(this).siblings().children();
+            let gameSeconds = 0;
+            let countUp = setInterval(countUpTimer, 1000);
     
-                function countUpTimer () { 
-                    gameSeconds = gameSeconds + 1;
-    
+            function countUpTimer () { 
+                gameSeconds = gameSeconds + 1;
                     if (gameSeconds === 0) {
-                        
+
                     // Condition in place so that when user clicks on Reset button, timer reverts back to 0 
                     } else if ($(".reset-button").click(function(){
                         gameSeconds = 0;
@@ -82,19 +81,20 @@ $(document).ready(function(){
             
             // Covers all tiles again after countdown is finished
             // Get rid of done class on divs that have been correctly matched prior to game start
-            $(".timer").click(function() { setTimeout (() => {
-                let allTiles = $(this).siblings().children();
-                    allTiles.children("div").addClass("tile-back");
-                    allTiles.children().removeClass(" done");
-                }, 4000);
+        $(".timer").click(function() { setTimeout (() => {
+            let allTiles = $(this).siblings().children();
+                allTiles.children("div").addClass("tile-back");
+                allTiles.children().removeClass(" done");
+            }, 4000);
             });
             
             // To reset timer and all tile pieces when clicked
-            $(".reset-button").click(function(){
-                window.setTimeout(() => {
-                    window.location.reload(true);
-                }, 200);
-                });
+            // Code received from StackOverflow
+        $(".reset-button").click(function(){
+            window.setTimeout(() => {
+                window.location.reload(true);
+            }, 200); 
+            });
             });
     
     
@@ -103,6 +103,7 @@ $(document).ready(function(){
     let tilesMatched = 0;
     
     // Tile matching functionality
+    // Code taken and adapted from various sources. Referenced in Credits section in ReadMe doc
     function showTile(e) {
         const target = e.currentTarget;
     
@@ -113,7 +114,7 @@ $(document).ready(function(){
         ) {
         return;
         }
-    
+        //Removes class tile-back when tile has been selected
         target.className = target.className.replace("tile-back", " ").trim();
         target.className += " done";
     
@@ -173,17 +174,17 @@ $(document).ready(function(){
             let overlay = document.querySelector("#overlay");
             
             // Content in html for class incorrect-score taken and showing in id final-incorrect-score in congrats message
-            let finalIncorrectScore =  $(document).ready(function() {
+            $(document).ready(function() {
                     $("#final-incorrect-score").html($(".incorrect-score").html());
                 });
 
             // Content in html for timer taken and showing in id final-time in congrats message
-            let finalTime =  $(document).ready(function() {
+            $(document).ready(function() {
                     $("#final-time").html($(".timer p").html());
                 });
 
             // Content in html for timer and incorrect-score taken and added together showing in id final-overall-score in congrats message
-            let overallScore =  $(document).ready(function() {
+            $(document).ready(function() {
                     $("#final-overall-score").html(Number($(".timer p").html()) + Number($(".incorrect-score").html()));
                 });
     
@@ -241,4 +242,4 @@ $(document).ready(function(){
     
     //Stores data to local storage
     localStorage.setItem("data", JSON.stringify(old_data));
-    }
+    };

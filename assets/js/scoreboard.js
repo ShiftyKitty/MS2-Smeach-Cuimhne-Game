@@ -12,7 +12,7 @@ userScoreboard.innerHTML = userScores.map(data => {
                 <td>${data.time_completed}</td>
                 <td>${data.incorrect_tiles_matched}</td>
                 <td>${data.overall_score}</td>
-            </tr>`
+            </tr>`;
     })
     .join("");
 
