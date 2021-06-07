@@ -596,6 +596,15 @@ footer {
     color: #F8E924;
 }
 
+.rules {
+    text-align: center;
+    font-size: 90%;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: #F8E924;
+    font-weight: 600;
+}
+
 
 /***********Scoreboard Page*/
 
@@ -867,6 +876,10 @@ footer {
         font-size: 90%;
     }
 
+    .rules {
+        font-size: 50%;
+    }
+
     
     .outer-ring .tile:nth-child(1) {
         transform: rotate(0deg) translate(7.6em);
@@ -1068,6 +1081,10 @@ footer {
     .reset-button {
         font-size: 90%;
     }
+
+    .rules {
+        font-size: 60%;
+    }
     
     .outer-ring .tile:nth-child(1) {
         transform: rotate(0deg) translate(8.5em);
@@ -1250,6 +1267,10 @@ footer {
     .reset-button  {
         bottom: 0;
         font-size: 100%;
+    }
+
+    .rules {
+        font-size: 60%;
     }
 
     .score-tally h5 {
