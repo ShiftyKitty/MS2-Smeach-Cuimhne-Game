@@ -13,12 +13,12 @@ The overall premise of this game is the following:
 
 ## Table of Contents:
 
-- [UX](##-UX) <br>
-- [Features](##-Features) <br>
-- [Technologies Used](##-Technologies-Used) <br>
-- [Testing](##-Testing) <br>
-- [Deployment](##-Deployment) <br>
-- [Credits](##-Credits) <br>
+- [UX](##ux) <br>
+- [Features](##features) <br>
+- [Technologies Used](##technologies-used) <br>
+- [Testing](##testing) <br>
+- [Deployment](##deployment) <br>
+- [Credits](##credits) <br>
 
 
 ## UX

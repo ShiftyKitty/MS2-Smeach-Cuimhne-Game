@@ -209,7 +209,7 @@ Have made changes to HTML and CSS to slightly explain the game. This was not som
 
 07/06/2021 (cont)
 
-- Final testing done and everything appears to be operating well. All recognised bugs and issues have been fixed. Overall happy with how things turned out. 
+- Final testing done and everything appears to be operating well in published link. All recognised bugs and issues have been fixed. Overall happy with how things turned out. 
 
 
 
